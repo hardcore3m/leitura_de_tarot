@@ -1,0 +1,1 @@
+# leitura_de_tarot
