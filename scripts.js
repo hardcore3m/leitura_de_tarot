@@ -6,9 +6,54 @@ Recebendo informação do usuário
 - Solicita motivação da leitura(pode ser um alert após confirmação do botão)
 - Botão para confirmar seleção
 */
-var comboCidades = document.getElementById("metodos");
+//Definindo array de Métodos caso seja necessário
+// var met = [];
+// met[0] = 'Consulta simples';
+// met[1] = 'Pŕos e contras';
+// met[2] = 'Presente, passado e futuro';
+// met[3] = 'Ponto cego';
+// met[4] = 'A cruz';
+// met[5] = 'Cruz Celta';
+// met[6] = 'Mandala Astrológica';
+// met[7] = 'O jogo da decisão';
+// met[8] = 'Próximo Passo';
 
-
+function selecionar(qualBotao) {
+    switch (qualBotao) {
+        case '1':
+            document.getElementById("botaoSelecionado").innerHTML = '<object type="text/html" data="met/met1.html"></object>';
+            break;
+        case '2':
+            document.getElementById("botaoSelecionado").innerHTML = '<object type="text/html" data="met/met2.html"></object>';
+            break;
+        case '3':
+            document.getElementById("botaoSelecionado").innerHTML = '<object type="text/html" data="met/met3.html"></object>';
+            break;
+        case '4':
+            document.getElementById("botaoSelecionado").innerHTML = '<object type="text/html" data="met/met4.html"></object>';
+            break;
+        case '5':
+            document.getElementById("botaoSelecionado").innerHTML = '<object type="text/html" data="met/met5.html"></object>';
+            break;
+        case '6':
+            document.getElementById("botaoSelecionado").innerHTML = '<object type="text/html" data="met/met6.html"></object>';
+            break;
+        case '7':
+            document.getElementById("botaoSelecionado").innerHTML = '<object type="text/html" data="met/met7.html"></object>';
+            break;
+        case '8':
+            document.getElementById("botaoSelecionado").innerHTML = '<object type="text/html" data="met/met8.html"></object>';
+            break;
+        case '9':
+            document.getElementById("botaoSelecionado").innerHTML = '<object type="text/html" data="met/met9.html"></object>';
+            break;
+        case '10':
+            document.getElementById("botaoSelecionado").innerHTML = '<object type="text/html" data="met/arc.html"></object>';
+            break;
+        default:
+            document.getElementById("botaoSelecionado").innerHTML = "erro";
+    }
+}
 
 /*
 Função para sortear cartas

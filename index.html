@@ -4,9 +4,7 @@
 <head>
     <link rel="stylesheet" href="estilos.css">
     <meta charset="utf-8">
-    <script src="scripts/jquery-3.5.1.min.js"></script>
-    <script src="scripts/scripts.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="scripts.js"></script>
     <title></title>
 </head>
 
@@ -15,20 +13,27 @@
         <h1>Leitura de tarô</h1>
     </header>
     <section>
-        <h1>Escolha o seu método de leitura</h1>
-        <div id="escolha">
-            <center>
-                <select id="metodos">
-                    <option value=""></option>
-                    <option value="scs">São Caetano do Sul</option>
-                    <option value="sa">Santo André</option>
-                    <option value="sbc">São Bernardo do Campo</option>
-                </select>
-            </center>
-        </div>
-        <hr>
-
-        <hr>
+        <center>
+            <div id="nav">
+                <h1>Escolha o método que mais adapta a sua questão</h1>
+                <form>
+                    <input type="button" value="Consulta Simples" onclick="selecionar('1');" />
+                    <input type="button" value="Pŕos e contras" onclick="selecionar('2');" />
+                    <input type="button" value="PPF" onclick="selecionar('3');" />
+                    <input type="button" value="Ponto cego" onclick="selecionar('4');" />
+                    <input type="button" value="A Cruz" onclick="selecionar('5');" />
+                    <br>
+                    <input type="button" value="Cruz Celta" onclick="selecionar('6');" />
+                    <input type="button" value="Mandala Astrológica" onclick="selecionar('7');" />
+                    <input type="button" value="Jogo da decisão" onclick="selecionar('8');" />
+                    <input type="button" value="Próximo Passo" onclick="selecionar('9');" />
+                    <input type="button" value="Consultar Arcanos" onclick="selecionar('10');">
+                                        
+                </form>
+                <br>
+                <div id="botaoSelecionado"></div>
+            </div>
+        </center>
 
     </section>
     <footer>
