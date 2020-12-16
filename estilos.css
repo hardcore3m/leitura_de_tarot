@@ -53,6 +53,9 @@ Option{
     height: 100%;
     padding-top: 10px;    
 }
+
+
+/*Páginas de métodos*/
 .arcanos{
     padding: 10px;
     margin: 10px;
@@ -62,4 +65,29 @@ Option{
 .arcanos summary{
     font-size: 14pt;
     padding-bottom: 5px;
+}
+.nnf{
+    border-width: 2px;
+    border-style: solid;
+    background-color: lawngreen;
+    margin: 10px;
+}
+.nnf td{
+    border-width: 1px;
+    border-style: dashed;
+    text-align: justify;
+    padding: 3px;
+}
+.col1{
+    width: auto;
+    border-style: solid;
+    border-width: 2px;
+    text-align: center;
+    padding: 3px;
+}
+.col2{
+    width: 100%;
+    border-style: solid;
+    border-width: 2px;
+    text-align: center;
 }
