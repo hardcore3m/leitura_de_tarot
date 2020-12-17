@@ -2,10 +2,10 @@
 <html lang="pt-br">
 
 <head>
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="../estilos.css">
     <meta charset="utf-8">
     <script src="scripts/jquery-3.5.1.min.js"></script>
-    <script src="scripts/scripts.js"></script>
+    <script src="../scripts.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <title>Método de Leitura</title>
 </head>
@@ -13,12 +13,98 @@
 <body>
     <section>
         <div class="apresentacao">
-            <center>
-                <br>
-                <h1>Consulta Simples</h1>
-                <p>Descrição do método selecionado</p> 
-            </center>
+
+            <br>
+            <h1>Consulta Simples</h1>
+            <p>Sorteie uma carta tendo em mente um determinado tema. O método permite uma
+                vasta possibilidade de interpretações, que podem ser evidentes ou não no momento
+                da consulta.
+            </p>
+            <br>
+            <input type="button" value="Sortear" onclick="sorteio();">
+
+            <script type="text/javascript">
+                function sorteio() {
+                    var resp = document.getElementById('resultado');
+                    var sorteio1 = Math.floor(21 * Math.random());
+                    // resp.innerHTML = sorteio1;
+                    switch (sorteio1) {
+                        case 0:
+                            resp.innerHTML = '<object type="text/html" data="arc/arc00.html"></object>';
+                            break;
+                        case 1:
+                            resp.innerHTML = '<object type="text/html" data="arc/arc00.html"></object>';
+                            break;
+                        case 2:
+                            resp.innerHTML = '<object type="text/html" data="arc/arc00.html"></object>';
+                            break;
+                        case 3:
+                            resp.innerHTML = '<object type="text/html" data="arc/arc00.html"></object>';
+                            break;
+                        case 4:
+                            resp.innerHTML = '<object type="text/html" data="arc/arc00.html"></object>';
+                            break;
+                        case 5:
+                            resp.innerHTML = '<object type="text/html" data="arc/arc00.html"></object>';
+                            break;
+                        case 6:
+                            resp.innerHTML = '<object type="text/html" data="arc/arc00.html"></object>';
+                            break;
+                        case 7:
+                            resp.innerHTML = '<object type="text/html" data="arc/arc00.html"></object>';
+                            break;
+                        case 8:
+                            resp.innerHTML = '<object type="text/html" data="arc/arc00.html"></object>';
+                            break;
+                        case 9:
+                            resp.innerHTML = '<object type="text/html" data="arc/arc00.html"></object>';
+                            break;
+                        case 10:
+                            resp.innerHTML = '<object type="text/html" data="arc/arc00.html"></object>';
+                            break;
+                        case 11:
+                            resp.innerHTML = '<object type="text/html" data="arc/arc00.html"></object>';
+                            break;
+                        case 12:
+                            resp.innerHTML = '<object type="text/html" data="arc/arc00.html"></object>';
+                            break;
+                        case 13:
+                            resp.innerHTML = '<object type="text/html" data="arc/arc00.html"></object>';
+                            break;
+                        case 14:
+                            resp.innerHTML = '<object type="text/html" data="arc/arc00.html"></object>';
+                            break;
+                        case 15:
+                            resp.innerHTML = '<object type="text/html" data="arc/arc00.html"></object>';
+                            break;
+                        case 16:
+                            resp.innerHTML = '<object type="text/html" data="arc/arc00.html"></object>';
+                            break;
+                        case 17:
+                            resp.innerHTML = '<object type="text/html" data="arc/arc00.html"></object>';
+                            break;
+                        case 18:
+                            resp.innerHTML = '<object type="text/html" data="arc/arc00.html"></object>';
+                            break;
+                        case 19:
+                            resp.innerHTML = '<object type="text/html" data="arc/arc00.html"></object>';
+                            break;
+                        case 20:
+                            resp.innerHTML = '<object type="text/html" data="arc/arc00.html"></object>';
+                            break;
+                        case 21:
+                            resp.innerHTML = '<object type="text/html" data="arc/arc00.html"></object>';
+                            break;
+                        default:
+                            resp.innerHTML = "talvez funcionou";
+
+                    }
+                }
+            </script>
+
         </div>
+        <div id="pergunta"></div>
+        <div id="resultado"></div>
     </section>
 </body>
 

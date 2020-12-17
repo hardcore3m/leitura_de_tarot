@@ -37,7 +37,7 @@ function selecionar(qualBotao) {
             break;
         case '6':
             document.getElementById("botaoSelecionado").innerHTML = '<object type="text/html" data="met/met6.html"></object>';
-            break;
+            break;          
         case '7':
             document.getElementById("botaoSelecionado").innerHTML = '<object type="text/html" data="met/met7.html"></object>';
             break;
