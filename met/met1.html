@@ -25,9 +25,10 @@
 
             <script type="text/javascript">
                 function sorteio() {
+                    data();
+                    questao();
                     var resp = document.getElementById('resultado');
                     var sorteio1 = Math.floor(21 * Math.random());
-                    // resp.innerHTML = sorteio1;
                     switch (sorteio1) {
                         case 0:
                             resp.innerHTML = '<object type="text/html" data="arc/arc00.html"></object>';
@@ -100,9 +101,11 @@
 
                     }
                 }
+                
             </script>
 
         </div>
+        <div id="data"></div>
         <div id="pergunta"></div>
         <div id="resultado"></div>
     </section>

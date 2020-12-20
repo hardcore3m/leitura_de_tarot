@@ -37,7 +37,7 @@ function selecionar(qualBotao) {
             break;
         case '6':
             document.getElementById("botaoSelecionado").innerHTML = '<object type="text/html" data="met/met6.html"></object>';
-            break;          
+            break;
         case '7':
             document.getElementById("botaoSelecionado").innerHTML = '<object type="text/html" data="met/met7.html"></object>';
             break;
@@ -53,6 +53,19 @@ function selecionar(qualBotao) {
         default:
             document.getElementById("botaoSelecionado").innerHTML = "erro";
     }
+}
+
+function data() {
+    hoje = new Date();
+    d = hoje.getDate();
+    m = hoje.getHours();
+    a = hoje.getFullYear();
+    document.getElementById('data').innerHTML = '<br>' + d + '/' + m + '/' + a;
+}
+
+function questao() {
+    var pergunta = window.prompt('Insira aqui a sua pergunta')
+    document.getElementById('pergunta').innerHTML ='<br><hr>' + 'Questão da pergunta: ' + pergunta + '<br><hr>';
 }
 
 /*
