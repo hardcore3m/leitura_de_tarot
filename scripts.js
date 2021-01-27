@@ -67,6 +67,11 @@ function questao() {
     var pergunta = window.prompt('Insira aqui a sua pergunta :')
     document.getElementById('pergunta').innerHTML = '<br><b>Nome: </b>'+nome + '<br><b>Data: </b>' + d + '/' + m + '/' + a + '<br><b>Questão da pergunta: </b>' + pergunta + '<br><hr>';
 }
+
+function escondeOpcoes() {
+    var container = document.getElementById('quadroOpcoes');
+    container.style.display = 'none';
+}
 /*
 Função para sortear cartas
 -Sorteia um numero de 0 a 22 sem repetir
