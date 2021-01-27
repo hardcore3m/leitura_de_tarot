@@ -19,7 +19,7 @@
             <hr>
             <br>
         </div>
-        <div class="container">
+        <div class="container" id="quadroOpcoes">
             <div class="row">
                 <div class="col-sm">
                     <p>Sorteie uma carta tendo em mente um determinado tema. O método permite uma
@@ -131,6 +131,7 @@
             data();
             questao();
             getSorteio();
+            escondeOpcoes();
 
         }
 
@@ -138,6 +139,7 @@
             data();
             questao();
             getPpf();
+            escondeOpcoes();
         }
         function getPpf() {
             var select1 = document.getElementById('escolha1');
@@ -172,7 +174,7 @@
 
     <script src="scripts/jquery-3.5.1.min.js"></script>
     <script src="../scripts.js"></script>
-    <script src="../msorteio.js"></script>
+    <script src="../arcanos.js"></script>
 </body>
 
 </html>

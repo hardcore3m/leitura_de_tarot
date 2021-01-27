@@ -377,33 +377,5 @@ var arcano = [
 var qtd = arcano.length;
 var cartas = 22;
 
-/*Declarando Variáveis em comum*/
-var nomeArcano1 = document.getElementById('arcano1');
-var nomeArcano2 = document.getElementById('arcano2');
-var referencia = document.getElementById('referencia');
-var simbologia = document.getElementById('simbologia');
-var aspectos = document.getElementById('aspectos');
-var conselho = document.getElementById('conselho');
-var advertencia = document.getElementById('advertencia');
-var cartaDoDia = document.getElementById('cartaDoDia');
 
-function getRandom() {
-    var sorteia = Math.floor(Math.random() * qtd);
-    nomeArcano.innerHTML = arcano[sorteia].numero + " - " + arcano[sorteia].nome;
-    referencia.innerHTML = "<b>Verbo: </b>" + arcano[sorteia].verbo + "<br>" + "<b>Chaves: </b>" + arcano[sorteia].chaves + "<br>" + "<b>Letra Hebraica: </b>" + arcano[sorteia].hebraico + "<br>" + "<b>Astrologia: </b>" + arcano[sorteia].astrologia;
-    simbologia.innerHTML = "<b>Simbologia:</b>" + arcano[sorteia].simbologia;
-    aspectos.innerHTML = "<b>Aspectos gerais: </b>" + arcano[sorteia].aspectos + "<br>" + "<b>Material: </b>" + arcano[sorteia].material + "<br>" + "<b>Mental: </b>" + arcano[sorteia].mental + "<br>" + "<b>Sentimental: </b>" + arcano[sorteia].sentimental + "<br>" + "<b>Espiritual: </b>" + arcano[sorteia].espiritual;
-    conselho.innerHTML = "<b>Conselho: </b>" + arcano[sorteia].conselho + "<br>" + "<b>Advertência: </b>" + arcano[sorteia].advertencia + "<br>" + "<b>Como carta do dia: </b>" + arcano[sorteia].cartaDoDia;
-}
-
-function getEscolha() {
-    var select1 = document.getElementById('escolha1');
-    var escolha1 = select1.options[select1.selectedIndex].value;
-    var select2 = document.getElementById('escolha2');
-    var escolha2 = select2.options[select2.selectedIndex].value;
-    nomeArcano1.innerHTML = arcano[escolha1].numero + " - " + arcano[escolha1].nome;
-    conselho.innerHTML = "<b>Conselho: </b>" + arcano[escolha1].conselho;
-    nomeArcano2.innerHTML = arcano[escolha2].numero + " - " + arcano[escolha2].nome; 
-    advertencia.innerHTML = "<b>Advertência: </b>" + arcano[escolha2].advertencia;
-}
 
