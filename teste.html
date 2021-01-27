@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" href="estilos.css">
+    <meta charset="utf-8">
+    <script src="scripts/jquery-3.5.1.min.js"></script>
+    <script src="scripts.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <title>Método de Leitura</title>
+</head>
+
+<body>
+    <section>
+        <div class="apresentacao">
+
+            <br>
+            <h1>Prós e Contras</h1>
+            <p>Descrição do método selecionado</p>
+
+            <input type="button" value="Sortear" onclick="generateRan();">
+
+            <script>
+                function generateRan() {
+                    data();
+                    questao();
+                    var random = [];
+                    for (var i = 0; i < 2; i++) {
+                        var temp = Math.floor(Math.random() * 22);
+                        if (random.indexOf(temp) == -1) {
+                            random.push(temp);
+                        }
+                        else
+                            i--;
+                    }
+                    carta1 = random[0];
+                    carta2 = random[1];
+
+                    
+                }
+                
+            </script>
+        </div>
+        <div id="data"></div>
+        <div id="pergunta"></div>
+        <div id="resultado"></div>
+        <div id="resultado2"></div>
+    </section>
+</body>
+
+</html>

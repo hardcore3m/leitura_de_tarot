@@ -25,13 +25,12 @@ Option{
     width: 400px;
 }
 #nav{
-    
-    
     width: 95%;
     border-radius: 20px;
     padding-bottom: 20px;
     border-style: solid;
     border-width: 2px;
+    margin-top: 20px;
 
 }
 #nav h1,h2,h3{
@@ -56,7 +55,7 @@ Option{
 
 
 /*Páginas de métodos*/
-.apresentacao h1{
+.apresentacao h1,p{
 text-align: center;
 
 }
@@ -105,4 +104,65 @@ text-align: center;
     width: 100%;
     height: 100%;
     padding-top: 10px;    
+}
+
+.button {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding: 6px 12px;
+    border: 1px solid darkslategray;
+    border-radius: 8px;
+    background: darkslategrey;
+    background: -webkit-gradient(linear, left top, left bottom, from(#e451ac), to(#8c326a));
+    background: -moz-linear-gradient(top, #e451ac, #8c326a);
+    background: linear-gradient(to bottom, #e451ac, #8c326a);
+    text-shadow: #581f42 1px 1px 1px;
+    font: normal normal bold 14px arial;
+    color: #ffffff;
+    text-decoration: none;
+}
+.button:hover,
+.button:focus {
+    border: 1px solid #af3e84;
+    background: #ff61ce;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ff61ce), to(#a83c7f));
+    background: -moz-linear-gradient(top, #ff61ce, #a83c7f);
+    background: linear-gradient(to bottom, #ff61ce, #a83c7f);
+    color: #ffffff;
+    text-decoration: none;
+}
+.button:active {
+    background: #8c326a;
+    background: -webkit-gradient(linear, left top, left bottom, from(#8c326a), to(#8c326a));
+    background: -moz-linear-gradient(top, #8c326a, #8c326a);
+    background: linear-gradient(to bottom, #8c326a, #8c326a);
+}
+.button:before{
+    content:  "\0000a0";
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    line-height: 24px;
+    margin: 0 4px -6px -4px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACpklEQVRIiZ2Vv2sUQRTHP28SkhA0SApTGlLFoO5JBMltkGwISEiwEAJplEDAf0AULK0kWEkq7TUKNjaSRhMhV5jGnFUKi5Bco4WI4HngZp/FzN7tze2emIXHfnfmzfvxne/MCmA4wVMKowmFN8D5amUrLvJLgycF80keDsLolMIGMPDrdH/czd94A4mHjY8vT0UAT4ALILUvm5td/f9FT0dFiWEFWLFDeljUZYp73YefKDdxqRxNKKyLiA2vWivyTZ80QZrZ35O0ZUphNAS8AgZdcICjIv8UpwnwHNu+S1ORAdaBCXETAijUulWf7aD7XhhWFLmNZMZEwFLkr2/DWUryVMSl6WgIWEds1ag237Q6yF1LDkXgKUHgBjDoAtJGkWq9oOeOdkwXW1IRRARNDVARELnpre/AXSkKpqMzwCyqKLkU3cqjJYvzNjdL0aKolaUt29LkJApCOQijsYK1HVdFDj2yhKNHBFrYGWKA5fy11oT2w5EmSoJwdhg4ArUdWFk6KK0ukH2Ei9Wd97EXq/AuSh0WgcGm9G3ABtBoBQfQcVSvnIAinUS0rlDH2l1gxNk90nGhDlz7f4rKs31itA9A0cRA49POdgIQlGcMIgMiGBQSaHy2P50OivISEITRMrABgmAl6qp+5uR6B3jsUbtQrWy99cZoJgjCaNQG0QeIPBdk0XdW1QZgRKQvZ+61wqrAI2CtWtmqAfQAUipHPQgVYB7kB7AK9GaVY3VKL9CTVVEGjwnEwH3g+si50adfDw+O7V0kBkhi19JaUyPavJbbcFZFGTwAPHQ4NmhLRXuVdzHIPPBSoSG5h4vOg+YZVsYvgIW9nQ/gq2hybs7Ev4+HQWZArwLjwChwFhhyVaaBfgLfgANgH/gIbPf/6f++u7vZ/On/BWdmGhp8T7RfAAAAAElFTkSuQmCC") no-repeat left center transparent;
+    background-size: 80% 80%;
+}
+
+#corpo .corpo{
+    font-size: 12pt;
+}
+
+#arcano{
+    font-size: 18pt;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+.col-sm p{
+    text-align: justify;
+
 }

@@ -2,24 +2,147 @@
 <html lang="pt-br">
 
 <head>
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="../estilos.css">
     <meta charset="utf-8">
-    <script src="scripts/jquery-3.5.1.min.js"></script>
-    <script src="scripts/scripts.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <title>Método de Leitura</title>
 </head>
 
 <body>
-    <section>
-        <div class="apresentacao">
-            <center>
-                <br>
-                <h1>Prós e Contras</h1>
-                <p>Descrição do método selecionado</p> 
-            </center>
+    <section id="corpo">
+        <div class="apresentacao container">
+
+            <br>
+            <h1>Pŕos e Contras</h1>
+            <p>Escolha esse método para questoẽs que podem ser respondidas com o que fazer e o que não fazer.</p>
+            <hr>
+            <br>
         </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <p>Sorteie uma carta tendo em mente um determinado tema. O método permite uma
+                        vasta possibilidade de interpretações, que podem ser evidentes ou não no momento
+                        da consulta.
+                    </p>
+                    <input type="button" value="Sortear" onclick="sorteio();">
+                </div>
+                <div class="col-sm">
+                    <h1 class="ou">OU</h1>
+                </div>
+                <div class="col-sm">
+                    <p>Escolha um Arcano entre as opções e veja as informações sobre o arcano</p>
+                    <h3>Pŕos</h3>
+                    <select id="escolha1">
+                        <option value=0>O Louco</option>
+                        <option value=1>O Mago</option>
+                        <option value=2>A Sacerdotiza</option>
+                        <option value=3>A Imperatriz</option>
+                        <option value=4>O Imperador</option>
+                        <option value=5>O hierofante</option>
+                        <option value=6>O Enamorado</option>
+                        <option value=7>O Carro</option>
+                        <option value=8>A Justiça</option>
+                        <option value=9>O Eremita</option>
+                        <option value=10>A Roda Da Fortuna</option>
+                        <option value=11>A Força</option>
+                        <option value=12>O Pendurado</option>
+                        <option value=13>A Morte</option>
+                        <option value=14>A Temperança</option>
+                        <option value=15>O Diabo</option>
+                        <option value=16>A Torre</option>
+                        <option value=17>A Estrela</option>
+                        <option value=18>A Lua</option>
+                        <option value=19>O Sol</option>
+                        <option value=20>O Julgamento</option>
+                        <option value=21>O Mundo</option>
+                    </select> <br>
+                    <h3>Contras</h3>
+                    <select id="escolha2">
+                        <option value=0>O Louco</option>
+                        <option value=1>O Mago</option>
+                        <option value=2>A Sacerdotiza</option>
+                        <option value=3>A Imperatriz</option>
+                        <option value=4>O Imperador</option>
+                        <option value=5>O hierofante</option>
+                        <option value=6>O Enamorado</option>
+                        <option value=7>O Carro</option>
+                        <option value=8>A Justiça</option>
+                        <option value=9>O Eremita</option>
+                        <option value=10>A Roda Da Fortuna</option>
+                        <option value=11>A Força</option>
+                        <option value=12>O Pendurado</option>
+                        <option value=13>A Morte</option>
+                        <option value=14>A Temperança</option>
+                        <option value=15>O Diabo</option>
+                        <option value=16>A Torre</option>
+                        <option value=17>A Estrela</option>
+                        <option value=18>A Lua</option>
+                        <option value=19>O Sol</option>
+                        <option value=20>O Julgamento</option>
+                        <option value=21>O Mundo</option>
+                    </select> <br>
+                    <input type="button" value="Escolher" onclick="escolha();">
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="corpo" id="data"></div>
+        <div class="corpo" id="pergunta"></div>
+        <div id="arcano1"></div>
+        <div id="arcano2"></div>
     </section>
+    <script type="text/javascript">
+        var arcano1 = document.getElementById('arcano1');
+        var arcano2 = document.getElementById('arcano2');
+        
+        function sorteio() {
+            data();
+            questao();
+            getSorteio();
+
+        }
+
+        function escolha() {
+            data();
+            questao();
+            getPpf();
+        }
+        function getPpf() {
+            var select1 = document.getElementById('escolha1');
+            var escolha1 = select1.options[select1.selectedIndex].value;
+            var select2 = document.getElementById('escolha2');
+            var escolha2 = select2.options[select2.selectedIndex].value;
+            
+
+            arcano1.innerHTML = '<h4>Passado </h4>' + '<h6>' + arcano[escolha1].numero + " - " + arcano[escolha1].nome + '</h6>' + '<br><p>' + arcano[escolha1].aspectos + '</p><hr>';
+            arcano2.innerHTML = '<h4>Presente </h4>' + '<h6>' + arcano[escolha2].numero + " - " + arcano[escolha2].nome + '</h6>' + '<br><p>' + arcano[escolha2].aspectos + '</p><hr>';
+            
+
+        }
+        function getSorteio() {
+            var max = 2;
+            var random = [];
+            for (var i = 0; i < max; i++) {
+                var temp = Math.floor(Math.random() * cartas);
+                if (random.indexOf(temp) == -1) {
+                    random.push(temp);
+                }
+                else
+                    i--;
+            }
+            arcano1.innerHTML = '<h4>Prós </h4>' + '<h6>' + arcano[random[0]].numero + " - " + arcano[random[0]].nome + '</h6>' + '<br><p>' + arcano[random[0]].aspectos + '</p><hr>';
+            arcano2.innerHTML = '<h4>Contras </h4>' + '<h6>' + arcano[random[1]].numero + " - " + arcano[random[1]].nome + '</h6>' + '<br><p>' + arcano[random[1]].aspectos + '</p><hr>';
+            
+        }
+    </script>
+
+    <script src="scripts/jquery-3.5.1.min.js"></script>
+    <script src="../scripts.js"></script>
+    <script src="../msorteio.js"></script>
 </body>
 
 </html>

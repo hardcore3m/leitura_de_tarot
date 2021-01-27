@@ -58,16 +58,15 @@ function selecionar(qualBotao) {
 function data() {
     hoje = new Date();
     d = hoje.getDate();
-    m = hoje.getHours();
+    m = hoje.getMonth()+1;
     a = hoje.getFullYear();
-    document.getElementById('data').innerHTML = '<br>' + d + '/' + m + '/' + a;
 }
 
 function questao() {
-    var pergunta = window.prompt('Insira aqui a sua pergunta')
-    document.getElementById('pergunta').innerHTML ='<br><hr>' + 'Questão da pergunta: ' + pergunta + '<br><hr>';
+    var nome = window.prompt('Insira Aqui seu nome: ')
+    var pergunta = window.prompt('Insira aqui a sua pergunta :')
+    document.getElementById('pergunta').innerHTML = '<br><b>Nome: </b>'+nome + '<br><b>Data: </b>' + d + '/' + m + '/' + a + '<br><b>Questão da pergunta: </b>' + pergunta + '<br><hr>';
 }
-
 /*
 Função para sortear cartas
 -Sorteia um numero de 0 a 22 sem repetir
