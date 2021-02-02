@@ -2,134 +2,169 @@
 <html lang="pt-br">
 
 <head>
-    <link rel="stylesheet" href="../estilos.css">
     <meta charset="utf-8">
-    <script src="scripts/jquery-3.5.1.min.js"></script>
-    <script src="scripts/scripts.js"></script>
+    <link rel="stylesheet" href="../estilos.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <title>Método de Leitura</title>
 </head>
 
 <body>
-    <section>
-        <div>
-            <br>
-            <h1>Arcanos do tarot</h1>
-            <br>
-            <details class="arcanos">
-                <summary>Arcanos Maiores</summary>
-                <p>Os arcanos maiores</p>
-            </details>
-            <details class="arcanos">
-                <summary>Naipe de Paus</summary>
-                <p>Os Arcanos do Naipe de paus</p>
-            </details>
-            <details class="arcanos">
-                <summary>Naipe de Ouros</summary>
-            </details>
-            <details class="arcanos">
-                <summary>Naipe de Espadas</summary>
-            </details>
-            <details class="arcanos">
-                <summary>Naipe de Copas</summary>
-            </details>
-            <details class="arcanos">
-                <summary>Naipes, números e figuras da corte</summary>
-                <table class="nnf" id="nnfNaipes">
-                    <tr>
-                        <th class="col1">Naipe</th>
-                        <th class="col2">Influencias dos naipes no tarot</th>
-                    </tr>
-                    <tr>
-                        <td>Paus</td>
-                        <td>Descrição</td>
-                    </tr>
-                    <tr>
-                        <td>Ouros</td>
-                        <td>Descrição</td>
-                    </tr>
-                    <tr>
-                        <td>Espadas</td>
-                        <td>Descrição</td>
-                    </tr>
-                    <tr>
-                        <td>Copas</td>
-                        <td>Descrição</td>
-                    </tr>
-                </table>
-                <table class="nnf" id="nnfNumeros">
-                    <tr>
-                        <th class="col1">Numeros</th>
-                        <th class="col2">Influências dos números no tarot</th>
-                    </tr>
-                    <tr>
-                        <td>Ás</td>
-                        <td>Descrição</td>
-                    </tr>
-                    <tr>
-                        <td>Dois</td>
-                        <td>Descrição</td>
-                    </tr>
-                    <tr>
-                        <td>Três</td>
-                        <td>Descrição</td>
-                    </tr>
-                    <tr>
-                        <td>Quatro</td>
-                        <td>Descrição</td>
-                    </tr>
-                    <tr>
-                        <td>Cinco</td>
-                        <td>Descrição</td>
-                    </tr>
-                    <tr>
-                        <td>Seis</td>
-                        <td>Descrição</td>
-                    </tr>
-                    <tr>
-                        <td>Sete</td>
-                        <td>Descrição</td>
-                    </tr>
-                    <tr>
-                        <td>Oito</td>
-                        <td>Descrição</td>
-                    </tr>
-                    <tr>
-                        <td>Nove</td>
-                        <td>Descrição</td>
-                    </tr>
-                    <tr>
-                        <td>Dez</td>
-                        <td>Descrição</td>
-                    </tr>
+    <section id="corpo">
+        <div class="apresentacao container">
 
-                </table>
+            <br>
+            <h1>Lista de Arcanos</h1>
+            <p>Escolha um arcano para consultar suas informações</p>
+            <h1 style="color: rebeccapurple;"><b><i>Fazer um carrossel para esta página e uma seleção de Maiores ou Naipes<br>Colocar uma propriedade com as imagens dos arcanos com a ligação para o arquivo.</i></b></h1>
+            <hr>
+            <br>
+        </div>
+        <div class="container" id="quadroOpcoes">
+            <div class="row">
+                <div class=>
+                    <p>Escolha um Arcano entre as opções e veja as informações sobre o arcano</p>
+                    <p><b>Arcano: </b>
+                        <select id="escolha1">
+                            <option value=0>O Louco</option>
+                            <option value=1>O Mago</option>
+                            <option value=2>A Sacerdotiza</option>
+                            <option value=3>A Imperatriz</option>
+                            <option value=4>O Imperador</option>
+                            <option value=5>O hierofante</option>
+                            <option value=6>O Enamorado</option>
+                            <option value=7>O Carro</option>
+                            <option value=8>A Justiça</option>
+                            <option value=9>O Eremita</option>
+                            <option value=10>A Roda Da Fortuna</option>
+                            <option value=11>A Força</option>
+                            <option value=12>O Pendurado</option>
+                            <option value=13>A Morte</option>
+                            <option value=14>A Temperança</option>
+                            <option value=15>O Diabo</option>
+                            <option value=16>A Torre</option>
+                            <option value=17>A Estrela</option>
+                            <option value=18>A Lua</option>
+                            <option value=19>O Sol</option>
+                            <option value=20>O Julgamento</option>
+                            <option value=21>O Mundo</option>
+                            <option value=22>Ás de Copas</option>
+                            <option value=23>2 de Copas</option>
+                            <option value=24>3 de Copas</option>
+                            <option value=25>4 de Copas</option>
+                            <option value=26>5 de Copas</option>
+                            <option value=27>6 de Copas</option>
+                            <option value=28>7 de Copas</option>
+                            <option value=29>8 de Copas</option>
+                            <option value=30>9 de Copas</option>
+                            <option value=31>10 de Copas</option>
+                            <option value=32>Rei de Copas</option>
+                            <option value=33>Rainha de Copas</option>
+                            <option value=34>Cavaleiro de Copas</option>
+                            <option value=35>Princesa de Copas</option>
+                            <option value=36>Ás de Ouros</option>
+                            <option value=37>2 de Ouros</option>
+                            <option value=38>3 de Ouros</option>
+                            <option value=39>4 de Ouros</option>
+                            <option value=40>5 de Ouros</option>
+                            <option value=41>6 de Ouros</option>
+                            <option value=42>7 de Ouros</option>
+                            <option value=43>8 de Ouros</option>
+                            <option value=44>9 de Ouros</option>
+                            <option value=45>10 de Ouros</option>
+                            <option value=46>Rei de Ouros</option>
+                            <option value=47>Rainha de Ouros</option>
+                            <option value=48>Cavaleiro de Ouros</option>
+                            <option value=49>Princesa de Ouros</option>
+                            <option value=50>Ás de Espadas</option>
+                            <option value=51>2 de Espadas</option>
+                            <option value=52>3 de Espadas </option>
+                            <option value=53>4 de Espadas</option>
+                            <option value=54>5 de Espadas</option>
+                            <option value=55>6 de Espadas</option>
+                            <option value=56>7 de Espadas</option>
+                            <option value=57>8 de Espadas</option>
+                            <option value=58>9 de Espadas</option>
+                            <option value=59>10 de Espadas </option>
+                            <option value=60>Rei de Espadas</option>
+                            <option value=61>Rainha de Espadas</option>
+                            <option value=62>Cavaleiro de Espadas</option>
+                            <option value=63>Princesa de Espadas</option>
+                            <option value=64>Ás de Paus</option>
+                            <option value=65>2 de Paus</option>
+                            <option value=66>3 de Paus</option>
+                            <option value=67>4 de Paus</option>
+                            <option value=68>5 de Paus</option>
+                            <option value=69>6 de Paus</option>
+                            <option value=70>7 de Paus</option>
+                            <option value=71>8 de Paus</option>
+                            <option value=72>9 de Paus</option>
+                            <option value=73>10 de Paus</option>
+                            <option value=74>Rei de Paus</option>
+                            <option value=75>Rainha de Paus</option>
+                            <option value=76>Cavaleiro de Paus</option>
+                            <option value=77>Princesa de Paus</option>
+                        </select>
+                    </p>
 
-                <table class="nnf" id="nnfCorte">
-                    <tr>
-                        <th class="col1">Corte</th>
-                        <th class="col2">Influencias da corte no tarot</th>
-                    </tr>
-                    <tr>
-                        <td>Reis</td>
-                        <td>Descrição</td>
-                    </tr>
-                    <tr>
-                        <td>Rainhas</td>
-                        <td>Descrição</td>
-                    </tr>
-                    <tr>
-                        <td>Cavaleiros</td>
-                        <td>Descrição</td>
-                    </tr>
-                    <tr>
-                        <td>Princesas</td>
-                        <td>Descrição</td>
-                    </tr>
-                </table>
-            </details>
+                    <input type="button" value="Escolher" onclick="escolha();">
+                </div>
+            </div>
+        </div>
+
+        <div class="corpo" id="data"></div>
+        <div class="corpo" id="pergunta"></div>
+        <div id="arcano1"></div>
+        <br>
+        <hr>
+        <br>
+        <div id="hajoBanzhaf">
+            <div id="oCaminho"></div>
+            <div id="lugar1"></div>
+            <div id="lugar2"></div>
+            <div id="lugar3"></div>
+            <div id="lugar4"></div>
+            <div id="lugar7"></div>
+            <div id="lugar6"></div>
+            <div id="lugar5"></div>
         </div>
     </section>
+
+    <script type="text/javascript">
+        var arcano1 = document.getElementById('arcano1');
+        var oCaminho = document.getElementById('oCaminho');
+        var lugar1 = document.getElementById('lugar1');
+        var lugar2 = document.getElementById('lugar2');
+        var lugar3 = document.getElementById('lugar3');
+        var lugar4 = document.getElementById('lugar4');
+        var lugar5 = document.getElementById('lugar5');
+        var lugar6 = document.getElementById('lugar6');
+        var lugar7 = document.getElementById('lugar7');
+
+        function escolha() {
+            getPpf();
+        }
+        function getPpf() {
+            var select1 = document.getElementById('escolha1');
+            var escolha1 = select1.options[select1.selectedIndex].value;
+
+            arcano1.innerHTML = '<h2>' + arcano[escolha1].numero + " - " + arcano[escolha1].nome + '</h2>' + '<br>' + '<h4 class="verbo">' + arcano[escolha1].verbo + '<i></h4>' + '<hr>' + '<h3>' + 'Referências' + '</h3>' + '<p class="subtitulo"><b>Chaves: </b>' + arcano[escolha1].chaves + '</p>' + '<p class="subtitulo"><b>Letra Hebraica: </b>' + arcano[escolha1].hebraico + '</p>' + '<p class="subtitulo"><b>Astrologia: </b>' + arcano[escolha1].astrologia + '</p>' + '<hr>' + '<h3>Simbologia</h3><p class="subtitulo">' + arcano[escolha1].simbologia + '</p><hr>' + '<h3>Aspectos Gerais</h3>' + '<p class="subtitulo"><b>Aspectos Gerais: </b>' + arcano[escolha1].aspectos + '</p>' + '<p class="subtitulo"><b>Material: </b>' + arcano[escolha1].material + '</p>' + '<p class="subtitulo"><b>Mental: </b>' + arcano[escolha1].mental + '</p>' + '<p class="subtitulo"><b>Sentimental: </b>' + arcano[escolha1].sentimental + '</p>' + '<p class="subtitulo"><b>Espiritual: </b>' + arcano[escolha1].espiritual + '</p>' + '<hr>' + '<p class="subtitulo"><b>Como carta de conselho: </b>' + arcano[escolha1].conselho + '<p class="subtitulo"><b>Em caso de advertência: </b>' + arcano[escolha1].advertencia + '<p class="subtitulo"><b>Como carta do dia: </b>' + arcano[escolha1].cartaDoDia + '<hr>';
+            oCaminho.innerHTML = '<h3>"O Caminho" de Hajo Banzhaf</h3><p>O tarólogo Hajo Banzhaf em seu livro <i>Das Arbeitsbuch zum Tarot,1988 - Eugen Diederichs Verlag (Guia Completo do Tarô, Ed Pensamento)</i> descreveu uma forma para interpretação única deste método para cada casa que o arcano esteja posicionado</p>';
+            lugar1.innerHTML = '<h5>Lugar 1. O assunto é este. Estas são as chances e os riscos envolvidos na pergunta.</h5><br>' + decisao[escolha1].casa1 + '<br><hr>';
+            lugar2.innerHTML = '<h4><b>Coluna Esquerda =</b> Comportamento até o momento:</h4><br><h5>Lugar 2. Postura consciente, pensamentos, motivações racionais, imaginação,intenções e modos de comportamento que a pessoa tem "na cabeça". O comportamento racional.</h5><br>' + decisao[escolha1].casa2 + '<br><hr>';
+            lugar3.innerHTML = '<h5>Lugar 3. Postura inconsciente, desejos e saudades que a pessoa traz "no coração". Esperanças e temores. Comportamento emocional.</h5><br>' + decisao[escolha1].casa3 + '<br><hr>';
+            lugar4.innerHTML = '<h5>Lugar 4. Postura exterior. A apresentação da pessoa· e, eventualmente, sua aparência.</h5><br>' + decisao[escolha1].casa4 + '<br><hr>';
+            lugar7.innerHTML = '<h4>Coluna Direita = Proposta para comportamento futuro (significados correspondentes aos lugares 2 a 4 respectivamente):</h4><br><h5>Lugar 7. Postura consciente. Proposta para o modo de agir racional.</h5><br>' + decisao[escolha1].casa7 + '<br><hr>';
+            lugar6.innerHTML = '<h5>Lugar 6. Postura inconsciente. Proposta para a postura emocional.</h5><br>' + decisao[escolha1].casa6 + '<br><hr>';
+            lugar5.innerHTML = '<h5>Lugar 5. Postura exterior. Assim a pessoa deverá se apresentar.</h5><br>' + decisao[escolha1].casa5 + '<br><hr>';
+        }
+
+    </script>
+
+    <script src="scripts/jquery-3.5.1.min.js"></script>
+    <script src="../scripts.js"></script>
+    <script src="../arcanos.js"></script>
+    <script src="../jogoDaDecisao.js"></script>
+
 </body>
 
 </html>
