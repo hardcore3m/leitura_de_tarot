@@ -1,5 +1,6 @@
 var arcano = [
     {
+        img:'<img src="../img/cartas/maiores/00.jpg">',
         numero: '0 | 22',
         nome: 'O Louco',
         verbo: 'Ousar',
@@ -17,6 +18,7 @@ var arcano = [
         cartaDoDia: false,
     },
     {
+        img:'<img src="../img/cartas/maiores/01.jpg">',
         numero: 'I',
         nome: 'O Mago',
         verbo: 'Criar',
@@ -34,6 +36,7 @@ var arcano = [
         cartaDoDia: false,
     },
     {
+        img:'<img src="../img/cartas/maiores/02.jpg">',
         numero: 'II',
         nome: 'A Sacerdotiza | A Alta Sacerdotiza',
         verbo: 'Analizar',
@@ -51,6 +54,7 @@ var arcano = [
         cartaDoDia: '<i>Por Hajo Banzhaf,</i><br>Deixe que dia de hoje venha tranqüilamente ao seu encontro e observe, sem nenhuma intenção ou expectativa, que acontecerá. Deixe que os acontecimentos se desenrolem e só interfira neles quando a sua voz interior lhe disser que faça. Caso os seus afazeres permitam, observe hoje tranqüilamente que se passa em você, quando não está em atividade. O que passa por sua cabeça? Do que você sente necessidade subitamente? Não precisa para isso se obrigar a ficar parado; siga apenas os seus impulsos interiores. Você se surpreenderá com quão intenso e satisfatório será esse dia, aparentemente ocioso. Preste atenção aos seus sonhos em especial, pois eles podem lhe transmitir informações valiosas.',
     },
     {
+        img:'<img src="../img/cartas/maiores/03.jpg">',
         numero: 'III',
         nome: 'A Imperatriz',
         verbo: false,
@@ -68,6 +72,7 @@ var arcano = [
         cartaDoDia: false,
     },
     {
+        img:'<img src="../img/cartas/maiores/04.jpg">',
         numero: 'IV',
         nome: 'O Imperador',
         verbo: false,
@@ -85,6 +90,7 @@ var arcano = [
         cartaDoDia: false,
     },
     {
+        img:'<img src="../img/cartas/maiores/05.jpg">',
         numero: 'V',
         nome: 'O Hierofante',
         verbo: false,
@@ -102,6 +108,7 @@ var arcano = [
         cartaDoDia: false,
     },
     {
+        img:'<img src="../img/cartas/maiores/06.jpg">',
         numero: 'VI',
         nome: 'O Enamorado | Os Amantes',
         verbo: false,
@@ -119,6 +126,7 @@ var arcano = [
         cartaDoDia: false,
     },
     {
+        img:'<img src="../img/cartas/maiores/07.jpg">',
         numero: 'VII',
         nome: 'O Carro',
         verbo: false,
@@ -136,6 +144,7 @@ var arcano = [
         cartaDoDia: false,
     },
     {
+        img:'<img src="../img/cartas/maiores/11.jpg">',
         numero: 'VIII',
         nome: 'A Justiça',
         verbo: false,
@@ -153,6 +162,7 @@ var arcano = [
         cartaDoDia: false,
     },
     {
+        img:'<img src="../img/cartas/maiores/09.jpg">',
         numero: 'IX',
         nome: 'O Eremita',
         verbo: false,
@@ -170,6 +180,7 @@ var arcano = [
         cartaDoDia: false,
     },
     {
+        img:'<img src="../img/cartas/maiores/10.jpg">',
         numero: 'X',
         nome: 'A Roda da Fortuna',
         verbo: false,
@@ -187,6 +198,7 @@ var arcano = [
         cartaDoDia: false,
     },
     {
+        img:'<img src="../img/cartas/maiores/08.jpg">',
         numero: 'XI',
         nome: 'A Força',
         verbo: false,
@@ -204,6 +216,7 @@ var arcano = [
         cartaDoDia: false,
     },
     {
+        img:'<img src="../img/cartas/maiores/12.jpg">',
         numero: 'XII',
         nome: 'O Pendurado | O Enforcado',
         verbo: false,
@@ -221,6 +234,7 @@ var arcano = [
         cartaDoDia: false,
     },
     {
+        img:'<img src="../img/cartas/maiores/13.jpg">',
         numero: 'XIII',
         nome: 'A Morte',
         verbo: false,
@@ -238,6 +252,7 @@ var arcano = [
         cartaDoDia: false,
     },
     {
+        img:'<img src="../img/cartas/maiores/14.jpg">',
         numero: 'XIV',
         nome: 'A Temperança',
         verbo: false,
@@ -255,6 +270,7 @@ var arcano = [
         cartaDoDia: false,
     },
     {
+        img:'<img src="../img/cartas/maiores/15.jpg">',
         numero: 'XV',
         nome: 'O Diabo',
         verbo: false,
@@ -272,6 +288,7 @@ var arcano = [
         cartaDoDia: false,
     },
     {
+        img:'<img src="../img/cartas/maiores/16.jpg">',
         numero: 'XVI',
         nome: 'A Torre | A Casa de Deus',
         verbo: false,
@@ -289,6 +306,7 @@ var arcano = [
         cartaDoDia: false,
     },
     {
+        img:'<img src="../img/cartas/maiores/17.jpg">',
         numero: 'XVII',
         nome: 'A Estrela',
         verbo: false,
@@ -306,6 +324,7 @@ var arcano = [
         cartaDoDia: false,
     },
     {
+        img:'<img src="../img/cartas/maiores/18.jpg">',
         numero: 'XVIII',
         nome: 'A Lua',
         verbo: false,
@@ -323,6 +342,7 @@ var arcano = [
         cartaDoDia: false,
     },
     {
+        img:'<img src="../img/cartas/maiores/19.jpg">',
         numero: 'XIX',
         nome: 'O Sol',
         verbo: false,
@@ -340,6 +360,7 @@ var arcano = [
         cartaDoDia: false,
     },
     {
+        img:'<img src="../img/cartas/maiores/20.jpg">',
         numero: 'XX',
         nome: 'O Julgamento',
         verbo: false,
@@ -357,6 +378,7 @@ var arcano = [
         cartaDoDia: false,
     },
     {
+        img:'<img src="../img/cartas/maiores/21.jpg">',
         numero: 'XXI',
         nome: 'O Mundo',
         verbo: false,
@@ -373,7 +395,8 @@ var arcano = [
         advertencia: false,
         cartaDoDia: false,
     },
-{
+    {
+        img:'<img src="../img/cartas/copas/c01.jpg">',
         numero: '23',
         nome: 'Ás de Copas',
         verbo: false,
@@ -391,6 +414,7 @@ var arcano = [
         cartaDoDia: false,
     },
     {
+        img:'<img src="../img/cartas/copas/c02.jpg">',
         numero: '24',
         nome: 'Dois de Copas',
         verbo: false,
@@ -408,6 +432,7 @@ var arcano = [
         cartaDoDia: false,
     },
     {
+        img:'<img src="../img/cartas/copas/c03.jpg">',
         numero: '25',
         nome: 'Três de Copas',
         verbo: false,
@@ -425,6 +450,7 @@ var arcano = [
         cartaDoDia: false,
     },
     {
+        img:'<img src="../img/cartas/copas/c04.jpg">',
         numero: '26',
         nome: 'Quatro de Copas',
         verbo: false,
@@ -442,6 +468,7 @@ var arcano = [
         cartaDoDia: false,
     },
     {
+        img:'<img src="../img/cartas/copas/c05.jpg">',
         numero: '27',
         nome: 'Cinco de Copas',
         verbo: false,
@@ -459,6 +486,7 @@ var arcano = [
         cartaDoDia: false,
     },
     {
+        img:'<img src="../img/cartas/copas/c06.jpg">',
         numero: '28',
         nome: 'Seis de Copas',
         verbo: false,
@@ -476,6 +504,7 @@ var arcano = [
         cartaDoDia: false,
     },
     {
+        img:'<img src="../img/cartas/copas/c07.jpg">',
         numero: '29',
         nome: 'Sete de Copas',
         verbo: false,
@@ -493,6 +522,7 @@ var arcano = [
         cartaDoDia: false,
     },
     {
+        img:'<img src="../img/cartas/copas/c08.jpg">',
         numero: '30',
         nome: 'Oito de Copas',
         verbo: false,
@@ -510,6 +540,7 @@ var arcano = [
         cartaDoDia: false,
     },
     {
+        img:'<img src="../img/cartas/copas/c09.jpg">',
         numero: '31',
         nome: 'Nove de Copas',
         verbo: false,
@@ -527,6 +558,7 @@ var arcano = [
         cartaDoDia: false,
     },
     {
+        img:'<img src="../img/cartas/copas/c10.jpg">',
         numero: '32',
         nome: 'Dez de Copas',
         verbo: false,
@@ -544,6 +576,7 @@ var arcano = [
         cartaDoDia: false,
     },
     {
+        img:'<img src="../img/cartas/copas/c14.jpg">',
         numero: '33',
         nome: 'Rei de Copas',
         verbo: false,
@@ -561,6 +594,7 @@ var arcano = [
         cartaDoDia: false,
     },
     {
+        img:'<img src="../img/cartas/copas/c13.jpg">',
         numero: '34',
         nome: 'Rainha de Copas',
         verbo: false,
@@ -578,6 +612,7 @@ var arcano = [
         cartaDoDia: false,
     },
     {
+        img:'<img src="../img/cartas/copas/c12.jpg">',
         numero: '35',
         nome: 'Cavaleiro de Copas',
         verbo: false,
@@ -595,6 +630,7 @@ var arcano = [
         cartaDoDia: false,
     },
     {
+        img:'<img src="../img/cartas/copas/c11.jpg">',
         numero: '36',
         nome: 'Princesa de Copas',
         verbo: false,
@@ -612,6 +648,7 @@ var arcano = [
         cartaDoDia: false,
     },
     {
+        img:'<img src="../img/cartas/ouros/o01.jpg">',
         numero: '37',
         nome: 'Ás de Ouros',
         verbo: false,
@@ -629,6 +666,7 @@ var arcano = [
         cartaDoDia: false,
     },
     {
+        img:'<img src="../img/cartas/ouros/o02.jpg">',
         numero: '38',
         nome: 'Dois de Ouros',
         verbo: false,
@@ -646,6 +684,7 @@ var arcano = [
         cartaDoDia: false,
     },
     {
+        img:'<img src="../img/cartas/ouros/o03.jpg">',
         numero: '39',
         nome: 'Três de Ouros',
         verbo: false,
@@ -663,6 +702,7 @@ var arcano = [
         cartaDoDia: false,
     },
     {
+        img:'<img src="../img/cartas/ouros/o04.jpg">',
         numero: '40',
         nome: 'Quatro de Ouros',
         verbo: false,
@@ -680,6 +720,7 @@ var arcano = [
         cartaDoDia: false,
     },
     {
+        img:'<img src="../img/cartas/ouros/o05.jpg">',
         numero: '41',
         nome: 'Cinco de Ouros',
         verbo: false,
@@ -697,6 +738,7 @@ var arcano = [
         cartaDoDia: false,
     },
     {
+        img:'<img src="../img/cartas/ouros/o06.jpg">',
         numero: '42',
         nome: 'Seis de Ouros',
         verbo: false,
@@ -714,6 +756,7 @@ var arcano = [
         cartaDoDia: false,
     },
     {
+        img:'<img src="../img/cartas/ouros/o07.jpg">',
         numero: '43',
         nome: 'Sete de Ouros',
         verbo: false,
@@ -731,6 +774,7 @@ var arcano = [
         cartaDoDia: false,
     },
     {
+        img:'<img src="../img/cartas/ouros/o08.jpg">',
         numero: '44',
         nome: 'Oito de Ouros',
         verbo: false,
@@ -748,6 +792,7 @@ var arcano = [
         cartaDoDia: false,
     },
     {
+        img:'<img src="../img/cartas/ouros/o09.jpg">',
         numero: '45',
         nome: 'Nove de Ouros',
         verbo: false,
@@ -765,6 +810,7 @@ var arcano = [
         cartaDoDia: false,
     },
     {
+        img:'<img src="../img/cartas/ouros/o10.jpg">',
         numero: '46',
         nome: 'Dez de Ouros',
         verbo: false,
@@ -782,6 +828,7 @@ var arcano = [
         cartaDoDia: false,
     },
     {
+        img:'<img src="../img/cartas/ouros/o14.jpg">',
         numero: '47',
         nome: 'Rei de Ouros',
         verbo: false,
@@ -799,6 +846,7 @@ var arcano = [
         cartaDoDia: false,
     },
     {
+        img:'<img src="../img/cartas/ouros/o13.jpg">',
         numero: '48',
         nome: 'Rainha de Ouros',
         verbo: false,
@@ -816,6 +864,7 @@ var arcano = [
         cartaDoDia: false,
     },
     {
+        img:'<img src="../img/cartas/ouros/o12.jpg">',
         numero: '49',
         nome: 'Cavaleiro de Ouros',
         verbo: false,
@@ -833,6 +882,7 @@ var arcano = [
         cartaDoDia: false,
     },
     {
+        img:'<img src="../img/cartas/ouros/o11.jpg">',
         numero: '50',
         nome: 'Princesa de Ouros',
         verbo: false,
@@ -850,6 +900,7 @@ var arcano = [
         cartaDoDia: false,
     },
     {
+        img:'<img src="../img/cartas/espadas/e01.jpg">',
         numero: '51',
         nome: 'Ás de Espadas',
         verbo: false,
@@ -867,6 +918,7 @@ var arcano = [
         cartaDoDia: false,
     },
     {
+        img:'<img src="../img/cartas/espadas/e02.jpg">',
         numero: '52',
         nome: 'Dois de Espadas',
         verbo: false,
@@ -884,6 +936,7 @@ var arcano = [
         cartaDoDia: false,
     },
     {
+        img:'<img src="../img/cartas/espadas/e03.jpg">',
         numero: '53',
         nome: 'Três de Espadas',
         verbo: false,
@@ -901,6 +954,7 @@ var arcano = [
         cartaDoDia: false,
     },
     {
+        img:'<img src="../img/cartas/espadas/e04.jpg">',
         numero: '54',
         nome: 'Quatro de Espadas',
         verbo: false,
@@ -918,6 +972,7 @@ var arcano = [
         cartaDoDia: false,
     },
     {
+        img:'<img src="../img/cartas/espadas/e05.jpg">',
         numero: '55',
         nome: 'Cinco de Espadas',
         verbo: false,
@@ -935,6 +990,7 @@ var arcano = [
         cartaDoDia: false,
     },
     {
+        img:'<img src="../img/cartas/espadas/e06.jpg">',
         numero: '56',
         nome: 'Seis de Espadas',
         verbo: false,
@@ -952,6 +1008,7 @@ var arcano = [
         cartaDoDia: false,
     },
     {
+        img:'<img src="../img/cartas/espadas/e07.jpg">',
         numero: '57',
         nome: 'Sete de Espadas',
         verbo: false,
@@ -969,6 +1026,7 @@ var arcano = [
         cartaDoDia: false,
     },
     {
+        img:'<img src="../img/cartas/espadas/e08.jpg">',
         numero: '58',
         nome: 'Oito de Espadas',
         verbo: false,
@@ -986,6 +1044,7 @@ var arcano = [
         cartaDoDia: false,
     },
     {
+        img:'<img src="../img/cartas/espadas/e09.jpg">',
         numero: '59',
         nome: 'Nove de Espadas',
         verbo: false,
@@ -1003,6 +1062,7 @@ var arcano = [
         cartaDoDia: false,
     },
     {
+        img:'<img src="../img/cartas/espadas/e10.jpg">',
         numero: '60',
         nome: 'Dez de Espadas',
         verbo: false,
@@ -1020,6 +1080,7 @@ var arcano = [
         cartaDoDia: false,
     },
     {
+        img:'<img src="../img/cartas/espadas/e14.jpg">',
         numero: '61',
         nome: 'Rei de Espadas',
         verbo: false,
@@ -1037,6 +1098,7 @@ var arcano = [
         cartaDoDia: false,
     },
     {
+        img:'<img src="../img/cartas/espadas/e13.jpg">',
         numero: '62',
         nome: 'Rainha de Espadas',
         verbo: false,
@@ -1054,6 +1116,7 @@ var arcano = [
         cartaDoDia: false,
     },
     {
+        img:'<img src="../img/cartas/espadas/e12.jpg">',
         numero: '63',
         nome: 'Cavaleiro de Espadas',
         verbo: false,
@@ -1071,6 +1134,7 @@ var arcano = [
         cartaDoDia: false,
     },
     {
+        img:'<img src="../img/cartas/espadas/e11.jpg">',
         numero: '64',
         nome: 'Princesa de Espadas',
         verbo: false,
@@ -1088,6 +1152,7 @@ var arcano = [
         cartaDoDia: false,
     },
     {
+        img:'<img src="../img/cartas/paus/p01.jpg">',
         numero: '65',
         nome: 'Ás de Paus',
         verbo: false,
@@ -1105,6 +1170,7 @@ var arcano = [
         cartaDoDia: false,
     },
     {
+        img:'<img src="../img/cartas/paus/p02.jpg">',
         numero: '66',
         nome: 'Dois de Paus',
         verbo: false,
@@ -1122,6 +1188,7 @@ var arcano = [
         cartaDoDia: false,
     },
     {
+        img:'<img src="../img/cartas/paus/p03.jpg">',
         numero: '67',
         nome: 'Três de Paus',
         verbo: false,
@@ -1139,6 +1206,7 @@ var arcano = [
         cartaDoDia: false,
     },
     {
+        img:'<img src="../img/cartas/paus/p04.jpg">',
         numero: '68',
         nome: 'Quatro de Paus',
         verbo: false,
@@ -1156,6 +1224,7 @@ var arcano = [
         cartaDoDia: false,
     },
     {
+        img:'<img src="../img/cartas/paus/p05.jpg">',
         numero: '69',
         nome: 'Cinco de Paus',
         verbo: false,
@@ -1173,6 +1242,7 @@ var arcano = [
         cartaDoDia: false,
     },
     {
+        img:'<img src="../img/cartas/paus/p06.jpg">',
         numero: '70',
         nome: 'Seis de Paus',
         verbo: false,
@@ -1190,6 +1260,7 @@ var arcano = [
         cartaDoDia: false,
     },
     {
+        img:'<img src="../img/cartas/paus/p07.jpg">',
         numero: '71',
         nome: 'Sete de Paus',
         verbo: false,
@@ -1207,6 +1278,7 @@ var arcano = [
         cartaDoDia: false,
     },
     {
+        img:'<img src="../img/cartas/paus/p08.jpg">',
         numero: '72',
         nome: 'Oito de Paus',
         verbo: false,
@@ -1224,6 +1296,7 @@ var arcano = [
         cartaDoDia: false,
     },
     {
+        img:'<img src="../img/cartas/paus/p09.jpg">',
         numero: '73',
         nome: 'Nove de Paus',
         verbo: false,
@@ -1241,6 +1314,7 @@ var arcano = [
         cartaDoDia: false,
     },
     {
+        img:'<img src="../img/cartas/paus/p10.jpg">',
         numero: '74',
         nome: 'Dez de Paus',
         verbo: false,
@@ -1258,6 +1332,7 @@ var arcano = [
         cartaDoDia: false,
     },
     {
+        img:'<img src="../img/cartas/paus/p14.jpg">',
         numero: '75',
         nome: 'Rei de Paus',
         verbo: false,
@@ -1275,6 +1350,7 @@ var arcano = [
         cartaDoDia: false,
     },
     {
+        img:'<img src="../img/cartas/paus/p13.jpg">',
         numero: '76',
         nome: 'Rainha de Paus',
         verbo: false,
@@ -1292,6 +1368,7 @@ var arcano = [
         cartaDoDia: false,
     },
     {
+        img:'<img src="../img/cartas/paus/p12.jpg">',
         numero: '77',
         nome: 'Cavaleiro de Paus',
         verbo: false,
@@ -1309,6 +1386,7 @@ var arcano = [
         cartaDoDia: false,
     },
     {
+        img:'<img src="../img/cartas/paus/p11.jpg">',
         numero: '78',
         nome: 'Princesa de Paus',
         verbo: false,
