@@ -13,244 +13,359 @@
 </head>
 
 <body>
+    <header>
+        <h1>Leitura de tarô</h1>
+
+
+        <style>
+            .barnav {
+                overflow: hidden;
+                background-color: #333;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            .barnav a {
+                float: left;
+                font-size: 16px;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+            .dropdwn {
+                float: left;
+                overflow: hidden;
+            }
+
+            .dropdwn .dropbttn {
+                cursor: pointer;
+                font-size: 16px;
+                border: none;
+                outline: none;
+                color: white;
+                padding: 14px 16px;
+                background-color: inherit;
+                font-family: inherit;
+                margin: 0;
+            }
+
+            .barnav a:hover,
+            .dropdwn:hover .dropbttn,
+            .dropbttn:focus {
+                background-color: rebeccapurple;
+                color: whitesmoke;
+            }
+
+            .dropdwn-content {
+                display: none;
+                position: absolute;
+                background-color: #f9f9f9;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                z-index: 1;
+            }
+
+            .dropdwn-content a {
+                float: none;
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                text-align: left;
+            }
+
+            .dropdwn-content a:hover {
+                background-color: #ddd;
+            }
+
+            .show {
+                display: block;
+            }
+
+            .current {
+                background-color: #666;
+            }
+        </style>
+        <div class="barnav">
+            <a class="barnav-link" href="../index.html">Início</a>
+            <a class="barnav-link current" href="#">Lista de Arcanos</a>
+            <a class="barnav-link" href="../naipes.html">Números e naipes</a>
+            <a class="barnav-link" href="met1.html">Consulta Simples</a>
+            <a class="barnav-link" href="met2.html">Pŕos e Contras</a>
+            <a class="barnav-link" href="met3.html">PPF</a>
+            <div class="dropdwn">
+                <button class="dropbttn" onclick="dropIt()">Outras Leituras
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdwn-content" id="mydropdwn">
+                    <a href="met4.html">Ponto Cego</a>
+                    <a href="met5.html">A Cruz</a>
+                    <a href="met6.html">Cruz Celta</a>
+                    <a href="met7.html">Mandala Astrológica</a>
+                    <a href="met8.html">Jogo da Decisão</a>
+                    <a href="met9.html">Próximo passo</a>
+                    <a href="met10.html">Conselho</a>
+                </div>
+            </div>
+        </div>
+    </header>
     <section id="nav">
-        <nav>
-            <a class="button" value="Consulta Simples" onclick="navCartas('maiores');">Arcanos Maiores</a>
-            <a class="button" value="Pŕos e contras" onclick="navCartas('copas');">Copas</a>
-            <a class="button" value="PPF" onclick="navCartas('ouros');">Ouros</a>
-            <a class="button" value="Ponto cego" onclick="navCartas('espadas');">Espadas</a>
-            <a class="button" value="A Cruz" onclick="navCartas('paus');">Paus</a>
-            <div class="navArcanos" id="navMaiores">
-                <h2>Arcanos Maiores</h2>
-                <div class="table-responsive">
-                    <table style="width:100%" class="table">
-                        <tr>
-                            <td><img src="../img/cartas/maiores/00.jpg" alt="O Louco" onclick="navCartas('0');"></td>
-                            <td><img src="../img/cartas/maiores/01.jpg" alt="O Mago" onclick="navCartas('1');"></td>
-                            <td><img src="../img/cartas/maiores/02.jpg" alt="A Sacerdotiza" onclick="navCartas('2');">
-                            </td>
-                            <td><img src="../img/cartas/maiores/03.jpg" alt="A imperatriz" onclick="navCartas('3');">
-                            </td>
-                            <td><img src="../img/cartas/maiores/04.jpg" alt="O Imperador" onclick="navCartas('4');">
-                            </td>
-                            <td><img src="../img/cartas/maiores/05.jpg" alt="O Hierofante" onclick="navCartas('5');">
-                            </td>
-                            <td><img src="../img/cartas/maiores/06.jpg" alt="O Enamorado" onclick="navCartas('6');">
-                            </td>
-                            <td><img src="../img/cartas/maiores/07.jpg" alt="O Carro" onclick="navCartas('7');"></td>
-                            <td><img src="../img/cartas/maiores/11.jpg" alt="A Justiça" onclick="navCartas('8');"></td>
-                            <td><img src="../img/cartas/maiores/09.jpg" alt="O Eremita" onclick="navCartas('9');"></td>
-                            <td><img src="../img/cartas/maiores/10.jpg" alt="A Roda da fortuna"
-                                    onclick="navCartas('10');"></td>
-                            <td><img src="../img/cartas/maiores/08.jpg" alt="A Força" onclick="navCartas('11');"></td>
-                            <td><img src="../img/cartas/maiores/12.jpg" alt="O Pendurado" onclick="navCartas('12');">
-                            </td>
-                            <td><img src="../img/cartas/maiores/13.jpg" alt="A Morte" onclick="navCartas('13');"></td>
-                            <td><img src="../img/cartas/maiores/14.jpg" alt="A Temperança" onclick="navCartas('14');">
-                            </td>
-                            <td><img src="../img/cartas/maiores/15.jpg" alt="O Diabo" onclick="navCartas('15');"></td>
-                            <td><img src="../img/cartas/maiores/16.jpg" alt="A Torre" onclick="navCartas('16');"></td>
-                            <td><img src="../img/cartas/maiores/17.jpg" alt="A Estrela" onclick="navCartas('17');"></td>
-                            <td><img src="../img/cartas/maiores/18.jpg" alt="A Lua" onclick="navCartas('18');"></td>
-                            <td><img src="../img/cartas/maiores/19.jpg" alt="O Sol" onclick="navCartas('19');"></td>
-                            <td><img src="../img/cartas/maiores/20.jpg" alt="O Julgamento" onclick="navCartas('20');">
-                            </td>
-                            <td><img src="../img/cartas/maiores/21.jpg" alt="O Mundo" onclick="navCartas('21');"></td>
-                        </tr>
-                        <tr>
-                            <td>O Louco</td>
-                            <td>O Mago</td>
-                            <td>A Sacerdotiza</td>
-                            <td>A Imperatriz</td>
-                            <td>O Imperador</td>
-                            <td>O Hierofante</td>
-                            <td>O Enamorado</td>
-                            <td>O Carro</td>
-                            <td>A Justiça</td>
-                            <td>O Eremita</td>
-                            <td>A Roda</td>
-                            <td>A Força</td>
-                            <td>O Pendurado</td>
-                            <td>A Morte</td>
-                            <td>A Temperança</td>
-                            <td>O Diabo</td>
-                            <td>A Torre</td>
-                            <td>A Estrela</td>
-                            <td>A Lua</td>
-                            <td>O Sol</td>
-                            <td>O Julgamento</td>
-                            <td>O Mundo</td>
-                        </tr>
-                    </table>
-                </div>
+        <center>
+            <nav>
+                <a class="button" value="Consulta Simples" onclick="navCartas('maiores');">Arcanos Maiores</a>
+                <a class="button" value="Pŕos e contras" onclick="navCartas('copas');">Copas</a>
+                <a class="button" value="PPF" onclick="navCartas('ouros');">Ouros</a>
+                <a class="button" value="Ponto cego" onclick="navCartas('espadas');">Espadas</a>
+                <a class="button" value="A Cruz" onclick="navCartas('paus');">Paus</a>
+                <div class="navArcanos" id="navMaiores">
+                    <h2>Arcanos Maiores</h2>
+                    <div class="table-responsive">
+                        <table style="width:100%" class="table">
+                            <tr>
+                                <td><img src="../img/cartas/maiores/00.jpg" alt="O Louco" onclick="navCartas('0');">
+                                </td>
+                                <td><img src="../img/cartas/maiores/01.jpg" alt="O Mago" onclick="navCartas('1');"></td>
+                                <td><img src="../img/cartas/maiores/02.jpg" alt="A Sacerdotiza"
+                                        onclick="navCartas('2');">
+                                </td>
+                                <td><img src="../img/cartas/maiores/03.jpg" alt="A imperatriz"
+                                        onclick="navCartas('3');">
+                                </td>
+                                <td><img src="../img/cartas/maiores/04.jpg" alt="O Imperador" onclick="navCartas('4');">
+                                </td>
+                                <td><img src="../img/cartas/maiores/05.jpg" alt="O Hierofante"
+                                        onclick="navCartas('5');">
+                                </td>
+                                <td><img src="../img/cartas/maiores/06.jpg" alt="O Enamorado" onclick="navCartas('6');">
+                                </td>
+                                <td><img src="../img/cartas/maiores/07.jpg" alt="O Carro" onclick="navCartas('7');">
+                                </td>
+                                <td><img src="../img/cartas/maiores/11.jpg" alt="A Justiça" onclick="navCartas('8');">
+                                </td>
+                                <td><img src="../img/cartas/maiores/09.jpg" alt="O Eremita" onclick="navCartas('9');">
+                                </td>
+                                <td><img src="../img/cartas/maiores/10.jpg" alt="A Roda da fortuna"
+                                        onclick="navCartas('10');"></td>
+                                <td><img src="../img/cartas/maiores/08.jpg" alt="A Força" onclick="navCartas('11');">
+                                </td>
+                                <td><img src="../img/cartas/maiores/12.jpg" alt="O Pendurado"
+                                        onclick="navCartas('12');">
+                                </td>
+                                <td><img src="../img/cartas/maiores/13.jpg" alt="A Morte" onclick="navCartas('13');">
+                                </td>
+                                <td><img src="../img/cartas/maiores/14.jpg" alt="A Temperança"
+                                        onclick="navCartas('14');">
+                                </td>
+                                <td><img src="../img/cartas/maiores/15.jpg" alt="O Diabo" onclick="navCartas('15');">
+                                </td>
+                                <td><img src="../img/cartas/maiores/16.jpg" alt="A Torre" onclick="navCartas('16');">
+                                </td>
+                                <td><img src="../img/cartas/maiores/17.jpg" alt="A Estrela" onclick="navCartas('17');">
+                                </td>
+                                <td><img src="../img/cartas/maiores/18.jpg" alt="A Lua" onclick="navCartas('18');"></td>
+                                <td><img src="../img/cartas/maiores/19.jpg" alt="O Sol" onclick="navCartas('19');"></td>
+                                <td><img src="../img/cartas/maiores/20.jpg" alt="O Julgamento"
+                                        onclick="navCartas('20');">
+                                </td>
+                                <td><img src="../img/cartas/maiores/21.jpg" alt="O Mundo" onclick="navCartas('21');">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>O Louco</td>
+                                <td>O Mago</td>
+                                <td>A Sacerdotiza</td>
+                                <td>A Imperatriz</td>
+                                <td>O Imperador</td>
+                                <td>O Hierofante</td>
+                                <td>O Enamorado</td>
+                                <td>O Carro</td>
+                                <td>A Justiça</td>
+                                <td>O Eremita</td>
+                                <td>A Roda</td>
+                                <td>A Força</td>
+                                <td>O Pendurado</td>
+                                <td>A Morte</td>
+                                <td>A Temperança</td>
+                                <td>O Diabo</td>
+                                <td>A Torre</td>
+                                <td>A Estrela</td>
+                                <td>A Lua</td>
+                                <td>O Sol</td>
+                                <td>O Julgamento</td>
+                                <td>O Mundo</td>
+                            </tr>
+                        </table>
+                    </div>
 
-            </div>
-            <div class="navArcanos" id="navOuros">
-                <h2>Naipe de Ouros</h2>
-                <div class="table-responsive">
-                    <table style="width:100%" class="table">
-                        <tr>
-                            <td><img src="../img/cartas/ouros/o01.jpg" alt="As" onclick="navCartas('36');"></td>
-                            <td><img src="../img/cartas/ouros/o02.jpg" alt="2" onclick="navCartas('37');"></td>
-                            <td><img src="../img/cartas/ouros/o03.jpg" alt="3" onclick="navCartas('38');"></td>
-                            <td><img src="../img/cartas/ouros/o04.jpg" alt="4" onclick="navCartas('39');"></td>
-                            <td><img src="../img/cartas/ouros/o05.jpg" alt="5" onclick="navCartas('40');"></td>
-                            <td><img src="../img/cartas/ouros/o06.jpg" alt="6" onclick="navCartas('41');"></td>
-                            <td><img src="../img/cartas/ouros/o07.jpg" alt="7" onclick="navCartas('42');"></td>
-                            <td><img src="../img/cartas/ouros/o08.jpg" alt="8" onclick="navCartas('43');"></td>
-                            <td><img src="../img/cartas/ouros/o09.jpg" alt="9" onclick="navCartas('44');"></td>
-                            <td><img src="../img/cartas/ouros/o10.jpg" alt="10" onclick="navCartas('45');"></td>
-                            <td><img src="../img/cartas/ouros/o11.jpg" alt="J" onclick="navCartas('49');"></td>
-                            <td><img src="../img/cartas/ouros/o12.jpg" alt="C" onclick="navCartas('48');"></td>
-                            <td><img src="../img/cartas/ouros/o13.jpg" alt="Q" onclick="navCartas('47');"></td>
-                            <td><img src="../img/cartas/ouros/o14.jpg" alt="K" onclick="navCartas('46');"></td>
-                        </tr>
-                        <tr>
-                            <td>Ás</td>
-                            <td>Dois</td>
-                            <td>Três</td>
-                            <td>Quatro</td>
-                            <td>Cinco</td>
-                            <td>Seis</td>
-                            <td>Sete</td>
-                            <td>Oito</td>
-                            <td>Nove</td>
-                            <td>Dez</td>
-                            <td>Princesa</td>
-                            <td>Cavaleiro</td>
-                            <td>Rainha</td>
-                            <td>Rei</td>
-                        </tr>
-                    </table>
                 </div>
+                <div class="navArcanos" id="navOuros">
+                    <h2>Naipe de Ouros</h2>
+                    <div class="table-responsive">
+                        <table style="width:100%" class="table">
+                            <tr>
+                                <td><img src="../img/cartas/ouros/o01.jpg" alt="As" onclick="navCartas('36');"></td>
+                                <td><img src="../img/cartas/ouros/o02.jpg" alt="2" onclick="navCartas('37');"></td>
+                                <td><img src="../img/cartas/ouros/o03.jpg" alt="3" onclick="navCartas('38');"></td>
+                                <td><img src="../img/cartas/ouros/o04.jpg" alt="4" onclick="navCartas('39');"></td>
+                                <td><img src="../img/cartas/ouros/o05.jpg" alt="5" onclick="navCartas('40');"></td>
+                                <td><img src="../img/cartas/ouros/o06.jpg" alt="6" onclick="navCartas('41');"></td>
+                                <td><img src="../img/cartas/ouros/o07.jpg" alt="7" onclick="navCartas('42');"></td>
+                                <td><img src="../img/cartas/ouros/o08.jpg" alt="8" onclick="navCartas('43');"></td>
+                                <td><img src="../img/cartas/ouros/o09.jpg" alt="9" onclick="navCartas('44');"></td>
+                                <td><img src="../img/cartas/ouros/o10.jpg" alt="10" onclick="navCartas('45');"></td>
+                                <td><img src="../img/cartas/ouros/o11.jpg" alt="J" onclick="navCartas('49');"></td>
+                                <td><img src="../img/cartas/ouros/o12.jpg" alt="C" onclick="navCartas('48');"></td>
+                                <td><img src="../img/cartas/ouros/o13.jpg" alt="Q" onclick="navCartas('47');"></td>
+                                <td><img src="../img/cartas/ouros/o14.jpg" alt="K" onclick="navCartas('46');"></td>
+                            </tr>
+                            <tr>
+                                <td>Ás</td>
+                                <td>Dois</td>
+                                <td>Três</td>
+                                <td>Quatro</td>
+                                <td>Cinco</td>
+                                <td>Seis</td>
+                                <td>Sete</td>
+                                <td>Oito</td>
+                                <td>Nove</td>
+                                <td>Dez</td>
+                                <td>Princesa</td>
+                                <td>Cavaleiro</td>
+                                <td>Rainha</td>
+                                <td>Rei</td>
+                            </tr>
+                        </table>
+                    </div>
 
-            </div>
-            <div class="navArcanos" id="navCopas">
-                <h2>Naipe de Copas</h2>
-                <div class="table-responsive">
-                    <table style="width:100%" class="table">
-                        <tr>
-                            <td><img src="../img/cartas/copas/c01.jpg" alt="As" onclick="navCartas('22');"></td>
-                            <td><img src="../img/cartas/copas/c02.jpg" alt="2" onclick="navCartas('23');"></td>
-                            <td><img src="../img/cartas/copas/c03.jpg" alt="3" onclick="navCartas('24');"></td>
-                            <td><img src="../img/cartas/copas/c04.jpg" alt="4" onclick="navCartas('25');"></td>
-                            <td><img src="../img/cartas/copas/c05.jpg" alt="5" onclick="navCartas('26');"></td>
-                            <td><img src="../img/cartas/copas/c06.jpg" alt="6" onclick="navCartas('27');"></td>
-                            <td><img src="../img/cartas/copas/c07.jpg" alt="7" onclick="navCartas('28');"></td>
-                            <td><img src="../img/cartas/copas/c08.jpg" alt="8" onclick="navCartas('29');"></td>
-                            <td><img src="../img/cartas/copas/c09.jpg" alt="9" onclick="navCartas('30');"></td>
-                            <td><img src="../img/cartas/copas/c10.jpg" alt="10" onclick="navCartas('31');"></td>
-                            <td><img src="../img/cartas/copas/c11.jpg" alt="J" onclick="navCartas('35');"></td>
-                            <td><img src="../img/cartas/copas/c12.jpg" alt="C" onclick="navCartas('34');"></td>
-                            <td><img src="../img/cartas/copas/c13.jpg" alt="Q" onclick="navCartas('33');"></td>
-                            <td><img src="../img/cartas/copas/c14.jpg" alt="K" onclick="navCartas('32');"></td>
-                        </tr>
-                        <tr>
-                            <td>Ás</td>
-                            <td>Dois</td>
-                            <td>Três</td>
-                            <td>Quatro</td>
-                            <td>Cinco</td>
-                            <td>Seis</td>
-                            <td>Sete</td>
-                            <td>Oito</td>
-                            <td>Nove</td>
-                            <td>Dez</td>
-                            <td>Princesa</td>
-                            <td>Cavaleiro</td>
-                            <td>Rainha</td>
-                            <td>Rei</td>
-                        </tr>
-                    </table>
                 </div>
+                <div class="navArcanos" id="navCopas">
+                    <h2>Naipe de Copas</h2>
+                    <div class="table-responsive">
+                        <table style="width:100%" class="table">
+                            <tr>
+                                <td><img src="../img/cartas/copas/c01.jpg" alt="As" onclick="navCartas('22');"></td>
+                                <td><img src="../img/cartas/copas/c02.jpg" alt="2" onclick="navCartas('23');"></td>
+                                <td><img src="../img/cartas/copas/c03.jpg" alt="3" onclick="navCartas('24');"></td>
+                                <td><img src="../img/cartas/copas/c04.jpg" alt="4" onclick="navCartas('25');"></td>
+                                <td><img src="../img/cartas/copas/c05.jpg" alt="5" onclick="navCartas('26');"></td>
+                                <td><img src="../img/cartas/copas/c06.jpg" alt="6" onclick="navCartas('27');"></td>
+                                <td><img src="../img/cartas/copas/c07.jpg" alt="7" onclick="navCartas('28');"></td>
+                                <td><img src="../img/cartas/copas/c08.jpg" alt="8" onclick="navCartas('29');"></td>
+                                <td><img src="../img/cartas/copas/c09.jpg" alt="9" onclick="navCartas('30');"></td>
+                                <td><img src="../img/cartas/copas/c10.jpg" alt="10" onclick="navCartas('31');"></td>
+                                <td><img src="../img/cartas/copas/c11.jpg" alt="J" onclick="navCartas('35');"></td>
+                                <td><img src="../img/cartas/copas/c12.jpg" alt="C" onclick="navCartas('34');"></td>
+                                <td><img src="../img/cartas/copas/c13.jpg" alt="Q" onclick="navCartas('33');"></td>
+                                <td><img src="../img/cartas/copas/c14.jpg" alt="K" onclick="navCartas('32');"></td>
+                            </tr>
+                            <tr>
+                                <td>Ás</td>
+                                <td>Dois</td>
+                                <td>Três</td>
+                                <td>Quatro</td>
+                                <td>Cinco</td>
+                                <td>Seis</td>
+                                <td>Sete</td>
+                                <td>Oito</td>
+                                <td>Nove</td>
+                                <td>Dez</td>
+                                <td>Princesa</td>
+                                <td>Cavaleiro</td>
+                                <td>Rainha</td>
+                                <td>Rei</td>
+                            </tr>
+                        </table>
+                    </div>
 
-            </div>
-            <div class="navArcanos" id="navEspadas">
-                <h2>Naipe de Espadas</h2>
-                <div class="table-responsive">
-                    <table style="width:100%" class="table">
-                        <tr>
-                            <td><img src="../img/cartas/espadas/e01.jpg" alt="As" onclick="navCartas('50');"></td>
-                            <td><img src="../img/cartas/espadas/e02.jpg" alt="2" onclick="navCartas('51');"></td>
-                            <td><img src="../img/cartas/espadas/e03.jpg" alt="3" onclick="navCartas('52');"></td>
-                            <td><img src="../img/cartas/espadas/e04.jpg" alt="4" onclick="navCartas('53');"></td>
-                            <td><img src="../img/cartas/espadas/e05.jpg" alt="5" onclick="navCartas('54');"></td>
-                            <td><img src="../img/cartas/espadas/e06.jpg" alt="6" onclick="navCartas('55');"></td>
-                            <td><img src="../img/cartas/espadas/e07.jpg" alt="7" onclick="navCartas('56');"></td>
-                            <td><img src="../img/cartas/espadas/e08.jpg" alt="8" onclick="navCartas('57');"></td>
-                            <td><img src="../img/cartas/espadas/e09.jpg" alt="9" onclick="navCartas('58');"></td>
-                            <td><img src="../img/cartas/espadas/e10.jpg" alt="10" onclick="navCartas('59');"></td>
-                            <td><img src="../img/cartas/espadas/e11.jpg" alt="J" onclick="navCartas('63');"></td>
-                            <td><img src="../img/cartas/espadas/e12.jpg" alt="C" onclick="navCartas('62');"></td>
-                            <td><img src="../img/cartas/espadas/e13.jpg" alt="Q" onclick="navCartas('61');"></td>
-                            <td><img src="../img/cartas/espadas/e14.jpg" alt="K" onclick="navCartas('60');"></td>
-                        </tr>
-                        <tr>
-                            <td>Ás</td>
-                            <td>Dois</td>
-                            <td>Três</td>
-                            <td>Quatro</td>
-                            <td>Cinco</td>
-                            <td>Seis</td>
-                            <td>Sete</td>
-                            <td>Oito</td>
-                            <td>Nove</td>
-                            <td>Dez</td>
-                            <td>Princesa</td>
-                            <td>Cavaleiro</td>
-                            <td>Rainha</td>
-                            <td>Rei</td>
-                        </tr>
-                    </table>
                 </div>
+                <div class="navArcanos" id="navEspadas">
+                    <h2>Naipe de Espadas</h2>
+                    <div class="table-responsive">
+                        <table style="width:100%" class="table">
+                            <tr>
+                                <td><img src="../img/cartas/espadas/e01.jpg" alt="As" onclick="navCartas('50');"></td>
+                                <td><img src="../img/cartas/espadas/e02.jpg" alt="2" onclick="navCartas('51');"></td>
+                                <td><img src="../img/cartas/espadas/e03.jpg" alt="3" onclick="navCartas('52');"></td>
+                                <td><img src="../img/cartas/espadas/e04.jpg" alt="4" onclick="navCartas('53');"></td>
+                                <td><img src="../img/cartas/espadas/e05.jpg" alt="5" onclick="navCartas('54');"></td>
+                                <td><img src="../img/cartas/espadas/e06.jpg" alt="6" onclick="navCartas('55');"></td>
+                                <td><img src="../img/cartas/espadas/e07.jpg" alt="7" onclick="navCartas('56');"></td>
+                                <td><img src="../img/cartas/espadas/e08.jpg" alt="8" onclick="navCartas('57');"></td>
+                                <td><img src="../img/cartas/espadas/e09.jpg" alt="9" onclick="navCartas('58');"></td>
+                                <td><img src="../img/cartas/espadas/e10.jpg" alt="10" onclick="navCartas('59');"></td>
+                                <td><img src="../img/cartas/espadas/e11.jpg" alt="J" onclick="navCartas('63');"></td>
+                                <td><img src="../img/cartas/espadas/e12.jpg" alt="C" onclick="navCartas('62');"></td>
+                                <td><img src="../img/cartas/espadas/e13.jpg" alt="Q" onclick="navCartas('61');"></td>
+                                <td><img src="../img/cartas/espadas/e14.jpg" alt="K" onclick="navCartas('60');"></td>
+                            </tr>
+                            <tr>
+                                <td>Ás</td>
+                                <td>Dois</td>
+                                <td>Três</td>
+                                <td>Quatro</td>
+                                <td>Cinco</td>
+                                <td>Seis</td>
+                                <td>Sete</td>
+                                <td>Oito</td>
+                                <td>Nove</td>
+                                <td>Dez</td>
+                                <td>Princesa</td>
+                                <td>Cavaleiro</td>
+                                <td>Rainha</td>
+                                <td>Rei</td>
+                            </tr>
+                        </table>
+                    </div>
 
-            </div>
-            <div class="navArcanos" id="navPaus">
-                <h2>Naipe de Paus</h2>
-                <div class="table-responsive">
-                    <table style="width:100%" class="table">
-                        <tr>
-                            <td><img src="../img/cartas/paus/p01.jpg" alt="As" onclick="navCartas('64');"></td>
-                            <td><img src="../img/cartas/paus/p02.jpg" alt="2" onclick="navCartas('65');"></td>
-                            <td><img src="../img/cartas/paus/p03.jpg" alt="3" onclick="navCartas('66');"></td>
-                            <td><img src="../img/cartas/paus/p04.jpg" alt="4" onclick="navCartas('67');"></td>
-                            <td><img src="../img/cartas/paus/p05.jpg" alt="5" onclick="navCartas('68');"></td>
-                            <td><img src="../img/cartas/paus/p06.jpg" alt="6" onclick="navCartas('69');"></td>
-                            <td><img src="../img/cartas/paus/p07.jpg" alt="7" onclick="navCartas('70');"></td>
-                            <td><img src="../img/cartas/paus/p08.jpg" alt="8" onclick="navCartas('71');"></td>
-                            <td><img src="../img/cartas/paus/p09.jpg" alt="9" onclick="navCartas('72');"></td>
-                            <td><img src="../img/cartas/paus/p10.jpg" alt="10" onclick="navCartas('73');"></td>
-                            <td><img src="../img/cartas/paus/p11.jpg" alt="J" onclick="navCartas('77');"></td>
-                            <td><img src="../img/cartas/paus/p12.jpg" alt="C" onclick="navCartas('76');"></td>
-                            <td><img src="../img/cartas/paus/p13.jpg" alt="Q" onclick="navCartas('75');"></td>
-                            <td><img src="../img/cartas/paus/p14.jpg" alt="K" onclick="navCartas('74');"></td>
-                        </tr>
-                        <tr>
-                            <td>Ás</td>
-                            <td>Dois</td>
-                            <td>Três</td>
-                            <td>Quatro</td>
-                            <td>Cinco</td>
-                            <td>Seis</td>
-                            <td>Sete</td>
-                            <td>Oito</td>
-                            <td>Nove</td>
-                            <td>Dez</td>
-                            <td>Princesa</td>
-                            <td>Cavaleiro</td>
-                            <td>Rainha</td>
-                            <td>Rei</td>
-                        </tr>
-                    </table>
                 </div>
+                <div class="navArcanos" id="navPaus">
+                    <h2>Naipe de Paus</h2>
+                    <div class="table-responsive">
+                        <table style="width:100%" class="table">
+                            <tr>
+                                <td><img src="../img/cartas/paus/p01.jpg" alt="As" onclick="navCartas('64');"></td>
+                                <td><img src="../img/cartas/paus/p02.jpg" alt="2" onclick="navCartas('65');"></td>
+                                <td><img src="../img/cartas/paus/p03.jpg" alt="3" onclick="navCartas('66');"></td>
+                                <td><img src="../img/cartas/paus/p04.jpg" alt="4" onclick="navCartas('67');"></td>
+                                <td><img src="../img/cartas/paus/p05.jpg" alt="5" onclick="navCartas('68');"></td>
+                                <td><img src="../img/cartas/paus/p06.jpg" alt="6" onclick="navCartas('69');"></td>
+                                <td><img src="../img/cartas/paus/p07.jpg" alt="7" onclick="navCartas('70');"></td>
+                                <td><img src="../img/cartas/paus/p08.jpg" alt="8" onclick="navCartas('71');"></td>
+                                <td><img src="../img/cartas/paus/p09.jpg" alt="9" onclick="navCartas('72');"></td>
+                                <td><img src="../img/cartas/paus/p10.jpg" alt="10" onclick="navCartas('73');"></td>
+                                <td><img src="../img/cartas/paus/p11.jpg" alt="J" onclick="navCartas('77');"></td>
+                                <td><img src="../img/cartas/paus/p12.jpg" alt="C" onclick="navCartas('76');"></td>
+                                <td><img src="../img/cartas/paus/p13.jpg" alt="Q" onclick="navCartas('75');"></td>
+                                <td><img src="../img/cartas/paus/p14.jpg" alt="K" onclick="navCartas('74');"></td>
+                            </tr>
+                            <tr>
+                                <td>Ás</td>
+                                <td>Dois</td>
+                                <td>Três</td>
+                                <td>Quatro</td>
+                                <td>Cinco</td>
+                                <td>Seis</td>
+                                <td>Sete</td>
+                                <td>Oito</td>
+                                <td>Nove</td>
+                                <td>Dez</td>
+                                <td>Princesa</td>
+                                <td>Cavaleiro</td>
+                                <td>Rainha</td>
+                                <td>Rei</td>
+                            </tr>
+                        </table>
+                    </div>
 
-            </div>
-            <br>
-        </nav>
+                </div>
+                <br>
+            </nav>
+        </center>
     </section>
     <section id="corpo">
-        <div class="corpo" id="data"></div>
-        <div class="corpo" id="pergunta"></div>
+        <div id="data"></div>
+        <div id="pergunta"></div>
         <div id="arcano1"></div>
         <br>
         <hr>

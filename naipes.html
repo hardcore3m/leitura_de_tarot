@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Numeros e Naipes</title>
+</head>
+
+<body>
+  <header>
+    <h1>Leitura de tarô</h1>
+    <style>
+      .barnav {
+        overflow: hidden;
+        background-color: #333;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .barnav a {
+        float: left;
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      .dropdwn {
+        float: left;
+        overflow: hidden;
+      }
+
+      .dropdwn .dropbttn {
+        cursor: pointer;
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+      }
+
+      .barnav a:hover,
+      .dropdwn:hover .dropbttn,
+      .dropbttn:focus {
+        background-color: rebeccapurple;
+        color: whitesmoke;
+      }
+
+      .dropdwn-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+      }
+
+      .dropdwn-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+
+      .dropdwn-content a:hover {
+        background-color: #ddd;
+      }
+
+      .show {
+        display: block;
+      }
+
+      .current {
+        background-color: #666;
+      }
+    </style>
+    </head>
+
+    <body>
+
+      <div class="barnav">
+        <a class="barnav-link" href="index.html">Início</a>
+        <a class="barnav-link" href="met/arc.html">Lista de Arcanos</a>
+        <a class="barnav-link current" href="#">Números e naipes</a>
+        <a class="barnav-link" href="met/met1.html">Consulta Simples</a>
+        <a class="barnav-link" href="met/met2.html">Pŕos e Contras</a>
+        <a class="barnav-link" href="met/met3.html">PPF</a>
+        <div class="dropdwn">
+          <button class="dropbttn" onclick="dropIt()">Outras Leituras
+              <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdwn-content" id="mydropdwn">
+              <a href="met/met4.html">Ponto Cego</a>
+              <a href="met/met5.html">A Cruz</a>
+              <a href="met/met6.html">Cruz Celta</a>
+              <a href="met/met7.html">Mandala Astrológica</a>
+              <a href="met/met8.html">Jogo da Decisão</a>
+              <a href="met/met9.html">Próximo passo</a>
+              <a href="met/met10.html">Conselho</a>
+          </div>
+      </div>
+      </div>
+
+  </header>
+  <script src="scripts.js"></script>
+</body>
+
+</html>

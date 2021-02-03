@@ -1,40 +1,3 @@
-function selecionar(qualBotao) {
-    switch (qualBotao) {
-        case '1':
-            document.getElementById("botaoSelecionado").innerHTML = '<object type="text/html" data="met/met1.html"></object>';
-            break;
-        case '2':
-            document.getElementById("botaoSelecionado").innerHTML = '<object type="text/html" data="met/met2.html"></object>';
-            break;
-        case '3':
-            document.getElementById("botaoSelecionado").innerHTML = '<object type="text/html" data="met/met3.html"></object>';
-            break;
-        case '4':
-            document.getElementById("botaoSelecionado").innerHTML = '<object type="text/html" data="met/met4.html"></object>';
-            break;
-        case '5':
-            document.getElementById("botaoSelecionado").innerHTML = '<object type="text/html" data="met/met5.html"></object>';
-            break;
-        case '6':
-            document.getElementById("botaoSelecionado").innerHTML = '<object type="text/html" data="met/met6.html"></object>';
-            break;
-        case '7':
-            document.getElementById("botaoSelecionado").innerHTML = '<object type="text/html" data="met/met7.html"></object>';
-            break;
-        case '8':
-            document.getElementById("botaoSelecionado").innerHTML = '<object type="text/html" data="met/met8.html"></object>';
-            break;
-        case '9':
-            document.getElementById("botaoSelecionado").innerHTML = '<object type="text/html" data="met/met9.html"></object>';
-            break;
-        case '10':
-            document.getElementById("botaoSelecionado").innerHTML = '<object type="text/html" data="met/arc.html"></object>';
-            break;
-        default:
-            document.getElementById("botaoSelecionado").innerHTML = "erro";
-    }
-}
-
 function data() {
     hoje = new Date();
     d = hoje.getDate();
@@ -407,3 +370,19 @@ function navCartas(qualBotao) {
             document.getElementById("botaoSelecionado").innerHTML = "erro";
     }
 }
+
+ /* When the user clicks on the button, 
+            toggle between hiding and showing the dropdwn content */
+            function dropIt() {
+                document.getElementById("mydropdwn").classList.toggle("show");
+              }
+              
+              // Close the dropdwn if the user clicks outside of it
+              window.onclick = function(e) {
+                if (!e.target.matches('.dropbttn')) {
+                var mydropdwn = document.getElementById("mydropdwn");
+                  if (mydropdwn.classList.contains('show')) {
+                    mydropdwn.classList.remove('show');
+                  }
+                }
+              }

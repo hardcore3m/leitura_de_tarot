@@ -9,7 +9,102 @@
 </head>
 
 <body>
-    <section id="corpo">
+    <header>
+        <h1>Leitura de tarô</h1>
+        <style>
+            .barnav {
+                overflow: hidden;
+                background-color: #333;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            .barnav a {
+                float: left;
+                font-size: 16px;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+            .dropdwn {
+                float: left;
+                overflow: hidden;
+            }
+
+            .dropdwn .dropbttn {
+                cursor: pointer;
+                font-size: 16px;
+                border: none;
+                outline: none;
+                color: white;
+                padding: 14px 16px;
+                background-color: inherit;
+                font-family: inherit;
+                margin: 0;
+            }
+
+            .barnav a:hover,
+            .dropdwn:hover .dropbttn,
+            .dropbttn:focus {
+                background-color: rebeccapurple;
+                color: whitesmoke;
+            }
+
+            .dropdwn-content {
+                display: none;
+                position: absolute;
+                background-color: #f9f9f9;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                z-index: 1;
+            }
+
+            .dropdwn-content a {
+                float: none;
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                text-align: left;
+            }
+
+            .dropdwn-content a:hover {
+                background-color: #ddd;
+            }
+
+            .show {
+                display: block;
+            }
+
+            .current {
+                background-color: #666;
+            }
+        </style>
+        <div class="barnav">
+            <a class="barnav-link" href="../index.html">Início</a>
+            <a class="barnav-link" href="arc.html">Lista de Arcanos</a>
+            <a class="barnav-link" href="../naipes.html">Números e naipes</a>
+            <a class="barnav-link current" href="#">Consulta Simples</a>
+            <a class="barnav-link" href="met2.html">Pŕos e Contras</a>
+            <a class="barnav-link" href="met3.html">PPF</a>
+            <div class="dropdwn">
+                <button class="dropbttn" onclick="dropIt()">Outras Leituras
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdwn-content" id="mydropdwn">
+                    <a href="met4.html">Ponto Cego</a>
+                    <a href="met5.html">A Cruz</a>
+                    <a href="met6.html">Cruz Celta</a>
+                    <a href="met7.html">Mandala Astrológica</a>
+                    <a href="met8.html">Jogo da Decisão</a>
+                    <a href="met9.html">Próximo passo</a>
+                    <a href="met10.html">Conselho</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="corpo">
         <div class="apresentacao container">
 
             <br>
@@ -22,17 +117,14 @@
         </div>
         <div class="container" id="quadroOpcoes">
             <div class="row">
-                <div class="col-sm">
+                <div class="col-5 navCards">
                     <p>Sorteie uma carta tendo em mente um determinado tema. O método permite uma
                         vasta possibilidade de interpretações, que podem ser evidentes ou não no momento
                         da consulta.
                     </p>
                     <input type="button" value="Sortear" onclick="sorteio();">
                 </div>
-                <div class="col-sm">
-                    <h1 class="ou">OU</h1>
-                </div>
-                <div class="col-sm">
+                <div class="col-6 navCards">
                     <p>Escolha um Arcano entre as opções e veja as informações sobre o arcano</p>
                     <p><b>Arcano: </b>
                         <select id="escolha1">
@@ -122,8 +214,8 @@
             </div>
         </div>
 
-        <div class="corpo" id="data"></div>
-        <div class="corpo" id="pergunta"></div>
+        <div id="data"></div>
+        <div id="pergunta"></div>
         <div id="arcano1"></div>
 
     </section>
