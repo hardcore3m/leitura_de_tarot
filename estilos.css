@@ -189,3 +189,16 @@ text-align: center;
     padding-left: 10px;
     padding-right: 10px;
 }
+.navArcanos{
+    display: none;
+    margin-left: 15px;  
+}
+.navArcanos img{
+    width: 80px;
+    cursor: pointer;
+}
+.navArcanos table{
+    text-align: center;
+    font-weight: bold;
+    background-color: blanchedalmond;
+}

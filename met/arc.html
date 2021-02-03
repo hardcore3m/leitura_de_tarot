@@ -7,116 +7,131 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="../style/owl.carousel.min.css">
     <link rel="stylesheet" href="../style/owl.theme.default.min.css">
-    
-    
+
+
     <title>Método de Leitura</title>
 </head>
 
 <body>
-    <section id="corpo">
-        <div class="apresentacao container">
-
-            <br>
-            <h1>Lista de Arcanos</h1>
-            <p>Escolha um arcano para consultar suas informações</p>
-            <h1 style="color: rebeccapurple;"><b><i>Fazer um carrossel para esta página e uma seleção de Maiores ou Naipes<br>Colocar uma propriedade com as imagens dos arcanos com a ligação para o arquivo.</i></b></h1>
-            <hr>
-            <br>
-        </div>
-        
-    </div>
-        <div class="container" id="quadroOpcoes">
-            <div class="row">
-                <div class=>
-                    <p>Escolha um Arcano entre as opções e veja as informações sobre o arcano</p>
-                    <p><b>Arcano: </b>
-                        <select id="escolha1">
-                            <option value=0>O Louco</option>
-                            <option value=1>O Mago</option>
-                            <option value=2>A Sacerdotiza</option>
-                            <option value=3>A Imperatriz</option>
-                            <option value=4>O Imperador</option>
-                            <option value=5>O hierofante</option>
-                            <option value=6>O Enamorado</option>
-                            <option value=7>O Carro</option>
-                            <option value=8>A Justiça</option>
-                            <option value=9>O Eremita</option>
-                            <option value=10>A Roda Da Fortuna</option>
-                            <option value=11>A Força</option>
-                            <option value=12>O Pendurado</option>
-                            <option value=13>A Morte</option>
-                            <option value=14>A Temperança</option>
-                            <option value=15>O Diabo</option>
-                            <option value=16>A Torre</option>
-                            <option value=17>A Estrela</option>
-                            <option value=18>A Lua</option>
-                            <option value=19>O Sol</option>
-                            <option value=20>O Julgamento</option>
-                            <option value=21>O Mundo</option>
-                            <option value=22>Ás de Copas</option>
-                            <option value=23>2 de Copas</option>
-                            <option value=24>3 de Copas</option>
-                            <option value=25>4 de Copas</option>
-                            <option value=26>5 de Copas</option>
-                            <option value=27>6 de Copas</option>
-                            <option value=28>7 de Copas</option>
-                            <option value=29>8 de Copas</option>
-                            <option value=30>9 de Copas</option>
-                            <option value=31>10 de Copas</option>
-                            <option value=32>Rei de Copas</option>
-                            <option value=33>Rainha de Copas</option>
-                            <option value=34>Cavaleiro de Copas</option>
-                            <option value=35>Princesa de Copas</option>
-                            <option value=36>Ás de Ouros</option>
-                            <option value=37>2 de Ouros</option>
-                            <option value=38>3 de Ouros</option>
-                            <option value=39>4 de Ouros</option>
-                            <option value=40>5 de Ouros</option>
-                            <option value=41>6 de Ouros</option>
-                            <option value=42>7 de Ouros</option>
-                            <option value=43>8 de Ouros</option>
-                            <option value=44>9 de Ouros</option>
-                            <option value=45>10 de Ouros</option>
-                            <option value=46>Rei de Ouros</option>
-                            <option value=47>Rainha de Ouros</option>
-                            <option value=48>Cavaleiro de Ouros</option>
-                            <option value=49>Princesa de Ouros</option>
-                            <option value=50>Ás de Espadas</option>
-                            <option value=51>2 de Espadas</option>
-                            <option value=52>3 de Espadas </option>
-                            <option value=53>4 de Espadas</option>
-                            <option value=54>5 de Espadas</option>
-                            <option value=55>6 de Espadas</option>
-                            <option value=56>7 de Espadas</option>
-                            <option value=57>8 de Espadas</option>
-                            <option value=58>9 de Espadas</option>
-                            <option value=59>10 de Espadas </option>
-                            <option value=60>Rei de Espadas</option>
-                            <option value=61>Rainha de Espadas</option>
-                            <option value=62>Cavaleiro de Espadas</option>
-                            <option value=63>Princesa de Espadas</option>
-                            <option value=64>Ás de Paus</option>
-                            <option value=65>2 de Paus</option>
-                            <option value=66>3 de Paus</option>
-                            <option value=67>4 de Paus</option>
-                            <option value=68>5 de Paus</option>
-                            <option value=69>6 de Paus</option>
-                            <option value=70>7 de Paus</option>
-                            <option value=71>8 de Paus</option>
-                            <option value=72>9 de Paus</option>
-                            <option value=73>10 de Paus</option>
-                            <option value=74>Rei de Paus</option>
-                            <option value=75>Rainha de Paus</option>
-                            <option value=76>Cavaleiro de Paus</option>
-                            <option value=77>Princesa de Paus</option>
-                        </select>
-                    </p>
-
-                    <input type="button" value="Escolher" onclick="escolha();">
+    <section id="nav">
+        <nav>
+            <a class="button" value="Consulta Simples" onclick="navCartas('maiores');">Arcanos Maiores</a>
+            <a class="button" value="Pŕos e contras" onclick="navCartas('copas');">Copas</a>
+            <a class="button" value="PPF" onclick="navCartas('ouros');">Ouros</a>
+            <a class="button" value="Ponto cego" onclick="navCartas('espadas');">Espadas</a>
+            <a class="button" value="A Cruz" onclick="navCartas('paus');">Paus</a>
+            <div class="navArcanos" id="navMaiores">
+                <h2>Arcanos Maiores</h2>
+                <div class="table-responsive">
+                    <table style="width:100%" class="table">
+                        <tr>
+                            <td><img src="../img/cartas/maiores/00.jpg" alt="O Louco" onclick="navCartas('0');"></td>
+                            <td><img src="../img/cartas/maiores/01.jpg" alt="O Mago" onclick="navCartas('1');"></td>
+                            <td><img src="../img/cartas/maiores/02.jpg" alt="A Sacerdotiza" onclick="navCartas('2');">
+                            </td>
+                            <td><img src="../img/cartas/maiores/03.jpg" alt="A imperatriz" onclick="navCartas('3');">
+                            </td>
+                            <td><img src="../img/cartas/maiores/04.jpg" alt="O Imperador" onclick="navCartas('4');">
+                            </td>
+                            <td><img src="../img/cartas/maiores/05.jpg" alt="O Hierofante" onclick="navCartas('5');">
+                            </td>
+                            <td><img src="../img/cartas/maiores/06.jpg" alt="O Enamorado" onclick="navCartas('6');">
+                            </td>
+                            <td><img src="../img/cartas/maiores/07.jpg" alt="O Carro" onclick="navCartas('7');"></td>
+                            <td><img src="../img/cartas/maiores/11.jpg" alt="A Justiça" onclick="navCartas('8');"></td>
+                            <td><img src="../img/cartas/maiores/09.jpg" alt="O Eremita" onclick="navCartas('9');"></td>
+                            <td><img src="../img/cartas/maiores/10.jpg" alt="A Roda da fortuna"
+                                    onclick="navCartas('10');"></td>
+                            <td><img src="../img/cartas/maiores/08.jpg" alt="A Força" onclick="navCartas('11');"></td>
+                            <td><img src="../img/cartas/maiores/12.jpg" alt="O Pendurado" onclick="navCartas('12');">
+                            </td>
+                            <td><img src="../img/cartas/maiores/13.jpg" alt="A Morte" onclick="navCartas('13');"></td>
+                            <td><img src="../img/cartas/maiores/14.jpg" alt="A Temperança" onclick="navCartas('14');">
+                            </td>
+                            <td><img src="../img/cartas/maiores/15.jpg" alt="O Diabo" onclick="navCartas('15');"></td>
+                            <td><img src="../img/cartas/maiores/16.jpg" alt="A Torre" onclick="navCartas('16');"></td>
+                            <td><img src="../img/cartas/maiores/17.jpg" alt="A Estrela" onclick="navCartas('17');"></td>
+                            <td><img src="../img/cartas/maiores/18.jpg" alt="A Lua" onclick="navCartas('18');"></td>
+                            <td><img src="../img/cartas/maiores/19.jpg" alt="O Sol" onclick="navCartas('19');"></td>
+                            <td><img src="../img/cartas/maiores/20.jpg" alt="O Julgamento" onclick="navCartas('20');">
+                            </td>
+                            <td><img src="../img/cartas/maiores/21.jpg" alt="O Mundo" onclick="navCartas('21');"></td>
+                        </tr>
+                        <tr>
+                            <td>O Louco</td>
+                            <td>O Mago</td>
+                            <td>A Sacerdotiza</td>
+                            <td>A Imperatriz</td>
+                            <td>O Imperador</td>
+                            <td>O Hierofante</td>
+                            <td>O Enamorado</td>
+                            <td>O Carro</td>
+                            <td>A Justiça</td>
+                            <td>O Eremita</td>
+                            <td>A Roda</td>
+                            <td>A Força</td>
+                            <td>O Pendurado</td>
+                            <td>A Morte</td>
+                            <td>A Temperança</td>
+                            <td>O Diabo</td>
+                            <td>A Torre</td>
+                            <td>A Estrela</td>
+                            <td>A Lua</td>
+                            <td>O Sol</td>
+                            <td>O Julgamento</td>
+                            <td>O Mundo</td>
+                        </tr>
+                    </table>
                 </div>
-            </div>
-        </div>
 
+            </div>
+            <div class="navArcanos" id="navOuros">
+                <h2>Naipe de Ouros</h2>
+                <div class="table-responsive">
+                    <table style="width:100%" class="table">
+                        <tr>
+                            <td><img src="../img/cartas/ouros/o01.jpg" alt="As" onclick="navCartas('22');"></td>
+                            <td><img src="../img/cartas/ouros/o02.jpg" alt="2" onclick="navCartas('23');"></td>
+                            <td><img src="../img/cartas/ouros/o03.jpg" alt="3" onclick="navCartas('24');"></td>
+                            <td><img src="../img/cartas/ouros/o04.jpg" alt="4" onclick="navCartas('25');"></td>
+                            <td><img src="../img/cartas/ouros/o05.jpg" alt="5" onclick="navCartas('26');"></td>
+                            <td><img src="../img/cartas/ouros/o06.jpg" alt="6" onclick="navCartas('27');"></td>
+                            <td><img src="../img/cartas/ouros/o07.jpg" alt="7" onclick="navCartas('28');"></td>
+                            <td><img src="../img/cartas/ouros/o08.jpg" alt="8" onclick="navCartas('29');"></td>
+                            <td><img src="../img/cartas/ouros/o09.jpg" alt="9" onclick="navCartas('30');"></td>
+                            <td><img src="../img/cartas/ouros/o10.jpg" alt="10" onclick="navCartas('31');"></td>
+                            <td><img src="../img/cartas/ouros/o11.jpg" alt="J" onclick="navCartas('32');"></td>
+                            <td><img src="../img/cartas/ouros/o12.jpg" alt="C" onclick="navCartas('33');"></td>
+                            <td><img src="../img/cartas/ouros/o13.jpg" alt="Q" onclick="navCartas('34');"></td>
+                            <td><img src="../img/cartas/ouros/o14.jpg" alt="K" onclick="navCartas('35');"></td>
+                        </tr>
+                        <tr>
+                            <td>Ás</td>
+                            <td>Dois</td>
+                            <td>Três</td>
+                            <td>Quatro</td>
+                            <td>Cinco</td>
+                            <td>Seis</td>
+                            <td>Sete</td>
+                            <td>Oito</td>
+                            <td>Nove</td>
+                            <td>Dez</td>
+                            <td>Princesa</td>
+                            <td>Cavaleiro</td>
+                            <td>Rainha</td>
+                            <td>Rei</td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+            <div class="navArcanos" id="navCopas">Naipe de Copas</div>
+            <div class="navArcanos" id="navEspadas">Naipe de Espadas</div>
+            <div class="navArcanos" id="navPaus">Naipe de Paus</div>
+            <br>
+        </nav>
+    </section>
+    <section id="corpo">
         <div class="corpo" id="data"></div>
         <div class="corpo" id="pergunta"></div>
         <div id="arcano1"></div>
@@ -151,9 +166,9 @@
         }
         function getPpf() {
             var select1 = document.getElementById('escolha1');
-            var escolha1 = select1.options[select1.selectedIndex].value;
 
-            arcano1.innerHTML = '<h2>' + arcano[escolha1].numero + " - " + arcano[escolha1].nome + '</h2>' + '<br>' +'<center>' + arcano[escolha1].img +'</center>'+'<br>'+ '<h4 class="verbo">' + arcano[escolha1].verbo + '<i></h4>' + '<hr>' + '<h3>' + 'Referências' + '</h3>' + '<p class="subtitulo"><b>Chaves: </b>' + arcano[escolha1].chaves + '</p>' + '<p class="subtitulo"><b>Letra Hebraica: </b>' + arcano[escolha1].hebraico + '</p>' + '<p class="subtitulo"><b>Astrologia: </b>' + arcano[escolha1].astrologia + '</p>' + '<hr>' + '<h3>Simbologia</h3><p class="subtitulo">' + arcano[escolha1].simbologia + '</p><hr>' + '<h3>Aspectos Gerais</h3>' + '<p class="subtitulo"><b>Aspectos Gerais: </b>' + arcano[escolha1].aspectos + '</p>' + '<p class="subtitulo"><b>Material: </b>' + arcano[escolha1].material + '</p>' + '<p class="subtitulo"><b>Mental: </b>' + arcano[escolha1].mental + '</p>' + '<p class="subtitulo"><b>Sentimental: </b>' + arcano[escolha1].sentimental + '</p>' + '<p class="subtitulo"><b>Espiritual: </b>' + arcano[escolha1].espiritual + '</p>' + '<hr>' + '<p class="subtitulo"><b>Como carta de conselho: </b>' + arcano[escolha1].conselho + '<p class="subtitulo"><b>Em caso de advertência: </b>' + arcano[escolha1].advertencia + '<p class="subtitulo"><b>Como carta do dia: </b>' + arcano[escolha1].cartaDoDia + '<hr>';
+
+            arcano1.innerHTML = '<h2>' + arcano[escolha1].numero + " - " + arcano[escolha1].nome + '</h2>' + '<br>' + '<center>' + arcano[escolha1].img + '</center>' + '<br>' + '<h4 class="verbo">' + arcano[escolha1].verbo + '<i></h4>' + '<hr>' + '<h3>' + 'Referências' + '</h3>' + '<p class="subtitulo"><b>Chaves: </b>' + arcano[escolha1].chaves + '</p>' + '<p class="subtitulo"><b>Letra Hebraica: </b>' + arcano[escolha1].hebraico + '</p>' + '<p class="subtitulo"><b>Astrologia: </b>' + arcano[escolha1].astrologia + '</p>' + '<hr>' + '<h3>Simbologia</h3><p class="subtitulo">' + arcano[escolha1].simbologia + '</p><hr>' + '<h3>Aspectos Gerais</h3>' + '<p class="subtitulo"><b>Aspectos Gerais: </b>' + arcano[escolha1].aspectos + '</p>' + '<p class="subtitulo"><b>Material: </b>' + arcano[escolha1].material + '</p>' + '<p class="subtitulo"><b>Mental: </b>' + arcano[escolha1].mental + '</p>' + '<p class="subtitulo"><b>Sentimental: </b>' + arcano[escolha1].sentimental + '</p>' + '<p class="subtitulo"><b>Espiritual: </b>' + arcano[escolha1].espiritual + '</p>' + '<hr>' + '<p class="subtitulo"><b>Como carta de conselho: </b>' + arcano[escolha1].conselho + '<p class="subtitulo"><b>Em caso de advertência: </b>' + arcano[escolha1].advertencia + '<p class="subtitulo"><b>Como carta do dia: </b>' + arcano[escolha1].cartaDoDia + '<hr>';
             oCaminho.innerHTML = '<h3>"O Caminho" de Hajo Banzhaf</h3><p>O tarólogo Hajo Banzhaf em seu livro <i>Das Arbeitsbuch zum Tarot,1988 - Eugen Diederichs Verlag (Guia Completo do Tarô, Ed Pensamento)</i> descreveu uma forma para interpretação única deste método para cada casa que o arcano esteja posicionado</p>';
             lugar1.innerHTML = '<h5>Lugar 1. O assunto é este. Estas são as chances e os riscos envolvidos na pergunta.</h5><br>' + decisao[escolha1].casa1 + '<br><hr>';
             lugar2.innerHTML = '<h4><b>Coluna Esquerda =</b> Comportamento até o momento:</h4><br><h5>Lugar 2. Postura consciente, pensamentos, motivações racionais, imaginação,intenções e modos de comportamento que a pessoa tem "na cabeça". O comportamento racional.</h5><br>' + decisao[escolha1].casa2 + '<br><hr>';
@@ -171,7 +186,7 @@
     <script src="../scripts.js"></script>
     <script src="../arcanos.js"></script>
     <script src="../jogoDaDecisao.js"></script>
-    
+
 
 </body>
 
