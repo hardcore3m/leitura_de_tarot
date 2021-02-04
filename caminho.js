@@ -1,4 +1,4 @@
-var decisao = [
+var caminho = [
     {
         numero: '0 | 22',
         nome: 'O Louco',
@@ -241,7 +241,7 @@ var decisao = [
         casa6: false,
         casa7: false,
     },
-{
+    {
         numero: '23',
         nome: 'Ás de Copas',
         casa1: false,
@@ -858,9 +858,9 @@ var decisao = [
         casa7: false,
     }
 ];
-var qtd = arcano.length;
+var qtd = caminho.length;
 var cartas = 78;
 
 
-console.log('Número de arcanos:' + arcano.length);
-console.log(arcano[0]);
+console.log('Número de arcanos:' + caminho.length);
+console.log(caminho[2]);
