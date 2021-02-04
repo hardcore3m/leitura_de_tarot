@@ -1,16 +1,17 @@
 @font-face {
-	font-family: DancingScript;
-	src: url(fonts/DancingScript-VariableFont_wght.ttf)
+    font-family: DancingScript;
+    src: url(fonts/DancingScript-VariableFont_wght.ttf)
 }
 
-header{
-background-image: url(img/bkg.jpg);
-background-repeat: no-repeat;
-background-size: cover;
-background-color: rebeccapurple;
-color: ivory;
+header {
+    background-image: url(img/bkg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rebeccapurple;
+    color: ivory;
 }
-header h1{
+
+header h1 {
     font-family: DancingScript;
     font-size: 40pt;
     text-align: center;
@@ -18,47 +19,56 @@ header h1{
     padding-bottom: 20px;
 }
 
-section h1,h2,h3{
+section h1, h2, h3 {
     text-align: center;
     padding-top: 20px;
 }
-#escolha{
+
+#escolha {
     padding-top: 10px;
 }
-Option{
+
+Option {
     text-transform: capitalize;
 }
-#questao{
+
+#questao {
     width: 400px;
 }
-#nav{
+
+#nav {
     width: 100%;
     padding-bottom: 20px;
     margin-top: 20px;
-
 }
-#nav h1,h2,h3{
+
+#nav h1, h2, h3 {
     color: darkslategray;
 }
-#nav input{
+
+#nav input {
     font-size: 10pt;
     font-weight: bold;
-    width: 180px   ;
-    margin:2pt;
+    width: 180px;
+    margin: 2pt;
 }
-.navArcanos{
+
+.navArcanos {
     display: none;
-    margin-left: 15px;  
+    margin-left: 15px;
 }
-.navArcanos img{
+
+.navArcanos img {
     width: 80px;
     cursor: pointer;
 }
-.navArcanos table{
+
+.navArcanos table {
     text-align: center;
     font-weight: bold;
     background-color: blanchedalmond;
 }
+
 #nav .button {
     display: inline-block;
     text-align: center;
@@ -72,110 +82,148 @@ Option{
     color: #ffffff;
     text-decoration: none;
 }
-#nav .button:hover{
+
+#nav .button:hover {
     border: 1px solid #af3e84;
-    
     background: linear-gradient(to bottom, #ff61ce, #a83c7f);
     color: #ffffff;
     text-decoration: none;
     cursor: pointer;
 }
-#botaoSelecionado{
+
+#botaoSelecionado {
     width: 80%;
     align-self: center;
     height: 700px;
 }
-#botaoSelecionado object{
+
+#botaoSelecionado object {
     width: 100%;
     height: 100%;
     padding-top: 10px;
 }
-.arcanos{
+
+.arcanos {
     padding: 10px;
     margin: 10px;
     background-color: antiquewhite;
     border-radius: 15px;
 }
-.arcanos summary{
+
+.arcanos summary {
     font-size: 14pt;
     padding-bottom: 5px;
 }
-.nnf{
+
+.nnf {
     border-width: 2px;
     border-style: solid;
     background-color: lawngreen;
     margin: 10px;
 }
-.nnf td{
+
+.nnf td {
     border-width: 1px;
     border-style: dashed;
     text-align: justify;
     padding: 3px;
 }
-.col1{
+
+.col1 {
     width: auto;
     border-style: solid;
     border-width: 2px;
     text-align: center;
     padding: 3px;
 }
-.col2{
+
+.col2 {
     width: 100%;
     border-style: solid;
     border-width: 2px;
     text-align: center;
 }
 
-#resultado{
+#resultado {
     width: 80%;
     align-self: center;
     height: 700px;
 }
-#resultado object{
+
+#resultado object {
     width: 100%;
     height: 100%;
-    padding-top: 10px;    
+    padding-top: 10px;
 }
 
-.corpo{
+.corpo {
     margin: 20px;
     padding-left: 15px;
     padding-right: 15px;
     padding-bottom: 20px;
     border: black solid 5px;
     font-size: 12pt;
-    
 }
 
-#arcano{
+#arcano {
     font-size: 18pt;
     font-weight: bolder;
     margin-bottom: 10px;
 }
 
-.col-sm p{
+.col-sm p {
     text-align: justify;
-
 }
-.verbo{
+
+.verbo {
     text-align: center;
     font-style: italic;
 }
-.subtitulo{
+
+.subtitulo {
     text-align: justify;
-    
 }
-#hajoBanzhaf{
+
+#hajoBanzhaf {
     margin: 15px;
     border-radius: 10px;
     background-color: lightblue;
     padding-left: 10px;
     padding-right: 10px;
 }
-.navCards{
+
+.navCards {
     background-color: rgb(168, 183, 199);
     border-radius: 15px;
     padding-top: 15px;
-    padding-bottom: 15px;   
+    padding-bottom: 15px;
     margin-right: 20px;
+}
+
+#naipesNav {
+    margin: 0 auto;
+    font-size: 16pt;
+    font-weight: bolder;
+    font-family: DancingScript;
+    text-align: center;
+}
+
+#naipesNav td {
+    margin: 20px;
+}
+
+#naipesNav img {
+    width: 80px;
+}
+
+#numerosNav {
+    margin: 0 auto;
+    font-size: 16pt;
+    font-weight: bolder;
+    font-family: DancingScript;
+    text-align: center;
+}
+
+#numerosNav td {
+    margin: 20px;
 }
