@@ -3,20 +3,9 @@
     src: url(fonts/DancingScript-VariableFont_wght.ttf)
 }
 
-header {
-    background-image: url(img/bkg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: rebeccapurple;
-    color: ivory;
-}
-
-header h1 {
-    font-family: DancingScript;
-    font-size: 40pt;
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
+@font-face {
+    font-family: Khodijah;
+    src: url(../fonts/Khodijah\ Free.otf)
 }
 
 section h1, h2, h3 {
