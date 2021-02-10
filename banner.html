@@ -14,10 +14,17 @@
             font-family: Fortune;
             src: url(../fonts/The\ Fortune.otf)
         }
-
         @font-face {
-            font-family: DancingScript;
-            src: url(fonts/DancingScript-VariableFont_wght.ttf)
+            font-family: Dancingscript;
+            src: url(/fonts/Caveat-VariableFont_wght.ttf)
+        }
+        @font-face {
+            font-family: Khodijah;
+            src: url(fonts/Khodijah\ Free.otf)
+        }
+        @font-face {
+            font-family: Caveat;
+            src: url(fonts/Caveat-VariableFont_wght.ttf);
         }
 
         header {
@@ -30,8 +37,8 @@
         }
 
         header h1 {
-            font-family: DancingScript;
-            font-size: 40pt;
+            font-family: Khodijah;
+            font-size: 38pt;
             text-align: center;
             padding-top: 20px;
             padding-bottom: 20px;
@@ -39,8 +46,10 @@
 
         .barnav {
             overflow: hidden;
-            background-color: #333;
-            font-family: Arial, Helvetica, sans-serif;
+            background-color: #4a148c;
+            font-family: DancingScript, Arial, Helvetica, sans-serif;
+            font-size: 24pt;
+            text-transform: uppercase;
         }
 
         .barnav a {
@@ -69,47 +78,15 @@
             margin: 0;
         }
 
-        .barnav a:hover,
-        .dropdwn:hover .dropbttn,
-        .dropbttn:focus {
+        .barnav a:hover {
             background-color: rebeccapurple;
-            color: whitesmoke;
-        }
-
-        .dropdwn-content {
-            display: none;
-            position: absolute;
-            background-color: #f9f9f9;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-            z-index: 1;
-        }
-
-        .dropdwn-content a {
-            float: none;
-            color: black;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            text-align: left;
-        }
-
-        .dropdwn-content a:hover {
-            background-color: #ddd;
-        }
-
-        .show {
-            display: block;
-        }
-
-        .current {
-            background-color: #666;
+            color: #ddd;
         }
     </style>
     <header>
         <h1> <span style="font-family: Fortune;">o&nbsp;&nbsp;J&nbsp;&nbsp;</span>Divine Nation<span
                 style="font-family:Fortune ;">&nbsp;&nbsp;B&nbsp;&nbsp;p</span></h1>
-        
+
         <div class="barnav">
             <a class="barnav-link" target="_top" href="index.html">Início</a>
             <a class="barnav-link" target="_top" href="met/arc.html">Lista de Arcanos</a>
@@ -117,20 +94,12 @@
             <a class="barnav-link" target="_top" href="met/met1.html">Consulta Simples</a>
             <a class="barnav-link" target="_top" href="met/met2.html">Pŕos e Contras</a>
             <a class="barnav-link" target="_top" href="met/met3.html">PPF</a>
-            <div class="dropdwn">
-                <button class="dropbttn" onclick="dropIt()">Outras Leituras
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdwn-content" id="mydropdwn">
-                    <a href="met/met4.html">Ponto Cego</a>
-                    <a href="met/met5.html">A Cruz</a>
-                    <a href="met/met6.html">Cruz Celta</a>
-                    <a href="met/met7.html">Mandala Astrológica</a>
-                    <a href="met/met8.html">Jogo da Decisão</a>
-                    <a href="met/met9.html">Próximo passo</a>
-                    <a href="met/met10.html">Conselho</a>
-                </div>
-            </div>
+            <a class="barnav-link" target="_top" href="met/met4.html">Ponto Cego</a>
+            <a class="barnav-link" target="_top" href="met/met10.html">O Caminho</a>
+            <a class="barnav-link" target="_top" href="met/met7.html">Mandala Astrológica</a>
+            <a class="barnav-link" target="_top" href="met/leituras.html">Outras Leituras</a>
+        </div>
+        </div>
         </div>
     </header>
 </body>
