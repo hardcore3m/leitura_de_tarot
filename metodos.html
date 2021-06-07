@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery.min.js"></script>
+    <title>Título da Página</title>
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <div class="apresentacao">
+        <div id="menu"></div>
+        <h1>Estudo do tarô</h1>
+        <h2>Consulte cartas e propagações para inúmeros casos específicos.</h2>
+        <p>Veja o que dizem os maiores tarólogos sobre a sua questão e compare sua interpretação.</p>
+        <div class="flexbox">
+            <div class="col20">
+                <div class="fixedBox">
+                    <div id="btnGeral" class="button">
+                        Todas as leituras
+                    </div>
+                    <div id="btnMaterial" class="button">Leituras sobre carreira e plano material</div>
+                    <div id="btnMental" class="button">Direcionamento e organização de ideias</div>
+                    <div id="btnSentimental" class="button">Amor e relacionamento</div>
+                    <div id="btnEspiritual" class="button">Para o contato com o espiritual</div>
+                    <div class="button"><a href="#">Topo &#9650;</a></div>
+                </div>
+            </div>
+            <div id="main" class="col80">
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function () {
+            for (let i = 0; i < leituras.length; i++) {
+                var filler = [];
+                for (let j = 0; j < leituras[i].tiragem.length; j++) {
+                    filler.push(
+                        "<h3>" + leituras[i].tiragem[j].posicao + ' - ' + leituras[i].tiragem[j].nome +
+                        '</h3>' +
+                        '<p>' + leituras[i].tiragem[j].significado + '</P>' + '<p><b>' +
+                        'Plano de análise: </b>' + leituras[i].tiragem[j].aspecto + '</p><hr>')
+                }
+
+                $("#main").append(
+                    '<div class="navArcanos">' +
+                    '<details>' +
+                    '<summary>' +
+                    '<div class="flexbox">' +
+                    '<div style="Width:30%;">' +
+                    '<h1>' + leituras[i].leitura + '</h1>' +
+                    '</div>' +
+                    '<div style="Width:60%;">' + '<p>' + leituras[i].descricao + '</p>' +
+                    '<div style="text-align:center; padding-top:10px"><span style="opacity:0.5; font-weight:bolder"><i>Mais informações &#9660;</i></span>' +
+                    '</div>' +
+                    '</div>' +
+                    '</summary>' +
+                    '<h4>"' + leituras[i].perguntas + '"</h4>' +
+                    '<p>' + $.each(filler, function (n) {
+                        return n
+                    }) + '</p>' +
+                    '<a id="indLeituras' + [i] + '" href="' + leituras[i].sigla +
+                    '">Clique aqui e compare sua leitura com a de especialistas</a><br>' +
+                    '</details>' +
+                    '<div>'
+                );
+            }
+        })
+        $("#btnGeral").click(
+            function () {
+                $("#main").empty();
+                for (let i = 0; i < leituras.length; i++) {
+                    var filler = [];
+                    for (let j = 0; j < leituras[i].tiragem.length; j++) {
+                        filler.push(
+                            "<h3>" + leituras[i].tiragem[j].posicao + ' - ' + leituras[i].tiragem[j].nome +
+                            '</h3>' +
+                            '<p>' + leituras[i].tiragem[j].significado + '</P>' + '<p><b>' +
+                            'Plano de análise: </b>' + leituras[i].tiragem[j].aspecto + '</p><hr>')
+                    }
+                    $("#main").append('<div class="navArcanos">' +
+                    '<details>' +
+                    '<summary>' +
+                    '<div class="flexbox">' +
+                    '<div style="Width:30%;">' +
+                    '<h1>' + leituras[i].leitura + '</h1>' +
+                    '</div>' +
+                    '<div style="Width:60%;">' + '<p>' + leituras[i].descricao + '</p>' +
+                    '<div style="text-align:center; padding-top:10px"><span style="opacity:0.5; font-weight:bolder"><i>Mais informações &#9660;</i></span>' +
+                    '</div>' +
+                    '</div>' +
+                    '</summary>' +
+                    '<h4>"' + leituras[i].perguntas + '"</h4>' +
+                    '<p>' + $.each(filler, function (n) {
+                        return n
+                    }) + '</p>' +
+                    '<a id="indLeituras' + [i] + '" href="' + leituras[i].sigla +
+                    '">Clique aqui e compare sua leitura com a de especialistas</a><br>' +
+                    '</details>' +
+                    '<div>'
+                    );
+                }
+
+            }
+        );
+
+        $("#btnMaterial").click(
+            function () {
+                $("#main").empty();
+                for (let i = 0; i < leituras.length; i++) {
+                    var filler = [];
+                    for (let j = 0; j < leituras[i].tiragem.length; j++) {
+                        filler.push(
+                            "<h3>" + leituras[i].tiragem[j].posicao + ' - ' + leituras[i].tiragem[j].nome +
+                            '</h3>' +
+                            '<p>' + leituras[i].tiragem[j].significado + '</P>' + '<p><b>' +
+                            'Plano de análise: </b>' + leituras[i].tiragem[j].aspecto + '</p><hr>')
+                    }
+                    if (leituras[i].material == true) {
+                        $("#main").append('<div class="navArcanos">' +
+                    '<details>' +
+                    '<summary>' +
+                    '<div class="flexbox">' +
+                    '<div style="Width:30%;">' +
+                    '<h1>' + leituras[i].leitura + '</h1>' +
+                    '</div>' +
+                    '<div style="Width:60%;">' + '<p>' + leituras[i].descricao + '</p>' +
+                    '<div style="text-align:center; padding-top:10px"><span style="opacity:0.5; font-weight:bolder"><i>Mais informações &#9660;</i></span>' +
+                    '</div>' +
+                    '</div>' +
+                    '</summary>' +
+                    '<h4>"' + leituras[i].perguntas + '"</h4>' +
+                    '<p>' + $.each(filler, function (n) {
+                        return n
+                    }) + '</p>' +
+                    '<a id="indLeituras' + [i] + '" href="' + leituras[i].sigla +
+                    '">Clique aqui e compare sua leitura com a de especialistas</a><br>' +
+                    '</details>' +
+                    '<div>'
+                        );
+
+                    } else {
+
+                    }
+                }
+
+            }
+        );
+
+
+        $("#btnMental").click(
+            function () {
+                $("#main").empty();
+                for (let i = 0; i < leituras.length; i++) {
+                    var filler = [];
+                    for (let j = 0; j < leituras[i].tiragem.length; j++) {
+                        filler.push(
+                            "<h3>" + leituras[i].tiragem[j].posicao + ' - ' + leituras[i].tiragem[j].nome +
+                            '</h3>' +
+                            '<p>' + leituras[i].tiragem[j].significado + '</P>' + '<p><b>' +
+                            'Plano de análise: </b>' + leituras[i].tiragem[j].aspecto + '</p><hr>')
+                    }
+                    if (leituras[i].direcionamento == true) {
+                        $("#main").append('<div class="navArcanos">' +
+                    '<details>' +
+                    '<summary>' +
+                    '<div class="flexbox">' +
+                    '<div style="Width:30%;">' +
+                    '<h1>' + leituras[i].leitura + '</h1>' +
+                    '</div>' +
+                    '<div style="Width:60%;">' + '<p>' + leituras[i].descricao + '</p>' +
+                    '<div style="text-align:center; padding-top:10px"><span style="opacity:0.5; font-weight:bolder"><i>Mais informações &#9660;</i></span>' +
+                    '</div>' +
+                    '</div>' +
+                    '</summary>' +
+                    '<h4>"' + leituras[i].perguntas + '"</h4>' +
+                    '<p>' + $.each(filler, function (n) {
+                        return n
+                    }) + '</p>' +
+                    '<a id="indLeituras' + [i] + '" href="' + leituras[i].sigla +
+                    '">Clique aqui e compare sua leitura com a de especialistas</a><br>' +
+                    '</details>' +
+                    '<div>'
+                        );
+                    } else {
+
+                    }
+                }
+
+            }
+        );
+
+        $("#btnSentimental").click(
+            function () {
+                $("#main").empty();
+                for (let i = 0; i < leituras.length; i++) {
+                    var filler = [];
+                    for (let j = 0; j < leituras[i].tiragem.length; j++) {
+                        filler.push(
+                            "<h3>" + leituras[i].tiragem[j].posicao + ' - ' + leituras[i].tiragem[j].nome +
+                            '</h3>' +
+                            '<p>' + leituras[i].tiragem[j].significado + '</P>' + '<p><b>' +
+                            'Plano de análise: </b>' + leituras[i].tiragem[j].aspecto + '</p><hr>')
+                    }
+                    if (leituras[i].amor == true) {
+                        $("#main").append('<div class="navArcanos">' +
+                    '<details>' +
+                    '<summary>' +
+                    '<div class="flexbox">' +
+                    '<div style="Width:30%;">' +
+                    '<h1>' + leituras[i].leitura + '</h1>' +
+                    '</div>' +
+                    '<div style="Width:60%;">' + '<p>' + leituras[i].descricao + '</p>' +
+                    '<div style="text-align:center; padding-top:10px"><span style="opacity:0.5; font-weight:bolder"><i>Mais informações &#9660;</i></span>' +
+                    '</div>' +
+                    '</div>' +
+                    '</summary>' +
+                    '<h4>"' + leituras[i].perguntas + '"</h4>' +
+                    '<p>' + $.each(filler, function (n) {
+                        return n
+                    }) + '</p>' +
+                    '<a id="indLeituras' + [i] + '" href="' + leituras[i].sigla +
+                    '">Clique aqui e compare sua leitura com a de especialistas</a><br>' +
+                    '</details>' +
+                    '<div>'
+                        );
+                    } else {
+
+                    }
+                }
+
+            }
+        );
+
+
+        $("#btnEspiritual").click(
+            function () {
+                $("#main").empty();
+                for (let i = 0; i < leituras.length; i++) {
+                    var filler = [];
+                    for (let j = 0; j < leituras[i].tiragem.length; j++) {
+                        filler.push(
+                            "<h3>" + leituras[i].tiragem[j].posicao + ' - ' + leituras[i].tiragem[j].nome +
+                            '</h3>' +
+                            '<p>' + leituras[i].tiragem[j].significado + '</P>' + '<p><b>' +
+                            'Plano de análise: </b>' + leituras[i].tiragem[j].aspecto + '</p><hr>')
+                    }
+                    if (leituras[i].espiritual == true) {
+                        $("#main").append('<div class="navArcanos">' +
+                    '<details>' +
+                    '<summary>' +
+                    '<div class="flexbox">' +
+                    '<div style="Width:30%;">' +
+                    '<h1>' + leituras[i].leitura + '</h1>' +
+                    '</div>' +
+                    '<div style="Width:60%;">' + '<p>' + leituras[i].descricao + '</p>' +
+                    '<div style="text-align:center; padding-top:10px"><span style="opacity:0.5; font-weight:bolder"><i>Mais informações &#9660;</i></span>' +
+                    '</div>' +
+                    '</div>' +
+                    '</summary>' +
+                    '<h4>"' + leituras[i].perguntas + '"</h4>' +
+                    '<p>' + $.each(filler, function (n) {
+                        return n
+                    }) + '</p>' +
+                    '<a id="indLeituras' + [i] + '" href="' + leituras[i].sigla +
+                    '">Clique aqui e compare sua leitura com a de especialistas</a><br>' +
+                    '</details>' +
+                    '<div>'
+                        );
+                    } else {
+
+                    }
+                }
+
+            }
+        );
+    </script>
+
+    <script src="js/arcanos.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/leituras.js"></script>
+</body>
+
+</html>

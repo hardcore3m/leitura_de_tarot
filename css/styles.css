@@ -1,0 +1,282 @@
+@font-face {
+    font-family: Fonte1;
+    src: url(../fonts/NewRocker-Regular.ttf);
+}
+
+@font-face {
+    font-family: Fonte2;
+    src: url(../fonts/IMMORTAL.ttf)
+}
+
+@font-face {
+    font-family: Fonte3;
+    src: url(../fonts/Khodijah\ Free.otf)
+}
+
+@font-face {
+    font-family: Fonte4;
+    src: url(../fonts/Caveat-VariableFont_wght.ttf);
+}
+
+.plFundo {
+    background-color: rgb(255, 255, 200);
+}
+
+header {
+    background-color: rgb(105, 27, 147);
+    font-family: Fonte2;
+}
+
+header .header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+header img {
+    width: min-content;
+}
+
+header:hover {
+    background: linear-gradient(to right, rgb(255, 255, 0), rgb(255, 255, 200));
+    color: black;
+}
+
+header:hover a div {
+    color: black;
+}
+
+header a:hover, header a:hover {
+    background-color: #6a1b94;
+    color: white;
+    text-decoration: none;
+}
+
+header a:link {
+    width: 100%;
+    padding: 4px 8px;
+}
+
+header a div {
+    vertical-align: middle;
+    color: #ddd;
+    font-family: Fonte2;
+}
+
+header .menu {
+    width: 100%;
+    align-content: stretch;
+    text-align: center;
+    padding-top: 25px;
+}
+
+.menulinks {
+    padding-top: 12px;
+    display: flex;
+    flex-direction: row;
+    align-content: stretch;
+    width: 80%;
+    margin-left: 20%;
+}
+
+input {
+    margin-top: 20px;
+}
+
+#menu a {
+    margin: 10px;
+}
+
+details {
+    margin: 20px 30px;
+}
+
+.apresentacao h1 {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: Fonte1;
+}
+
+.apresentacao h2 {
+    text-align: center;
+    color: grey;
+    margin-bottom: 30px;
+    font-family: Fonte4;
+}
+
+.apresentacao {
+    background-image: url(../img/cartas.png);
+    height: 500px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.apresentacao .button {
+    background-color: #6a1b94;
+    color: white;
+    font-size: 12pt;
+    cursor: pointer;
+    padding: 10px;
+    margin-bottom: 15px;
+    text-align: right;
+}
+
+.apresentacao .button:hover {
+    background-color: rgba(106, 27, 148,0.2);
+    
+}
+
+#main {
+    border-left: rgb(106, 27, 148) solid 5px;
+}
+#main a{
+    font-weight: bold;
+    color: #6a1b94;
+    background-color: rgba(106, 27, 148,0.2);
+}
+
+.cards {
+    height: 362px;
+    width: 209px;
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+
+.cardsTop {
+    height: 70%;
+}
+
+.cardsBottom {
+    font-size: 18pt;
+    color: white;
+    padding: 10%;
+    height: 30%;
+    text-align: right;
+    font-family: Fonte1;
+    background-color: black;
+}
+
+.flexbox {
+    display: flex;
+}
+
+.flexbox div {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flexbox div a:hover, .flexbox div a:link {
+    text-decoration: none;
+}
+
+.arcNav h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    color: black;
+    padding-top: 10px;
+}
+
+.voltar {
+    background: linear-gradient(to left, white, black, white);
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+
+.navArcanos {
+    border: #6a1b94 solid 1px;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.navArcanos img {
+    height: 100px;
+}
+
+.navArcanos h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
+    font-weight: bold;
+    font-size: 16pt;
+    padding-left: 10px;
+}
+
+.navArcanos h2 {
+    color: grey;
+    text-align: center;
+    font-size: 16pt;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+.navArcanos h4 {
+    font-family: Fonte4;
+    color: grey;
+    padding-left: 10px;
+}
+
+.navArcanos h3 {
+    color: grey;
+    font-weight: bolder;
+}
+
+.navArcanos p {
+    font-family: Fonte4;
+    font-size: 16pt;
+    padding: 10px;
+}
+
+summary::marker {
+    color: white;
+}
+
+.minImg {
+    height: 30px;
+}
+
+li {
+    font-family: Fonte4;
+    font-size: 14pt;
+}
+
+.planosImg {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.col20 {
+    width: 20%;
+}
+
+.col80 {
+    width: 80%;
+}
+
+.col70 {
+    width: 70%;
+}
+
+.fixedBox {
+    position: sticky;
+    top: 100px;
+    padding-top: 20px;
+}
+
+.fixedBox a {
+    color: white;
+    font-weight: bold;
+}
+
+#footer {
+    margin-top: 100px;
+}

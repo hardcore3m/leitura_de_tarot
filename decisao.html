@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="js/jquery.min.js"></script>
+    <title>Jogo da Decisão</title>
+</head>
+
+<body>
+  <header>
+
+    </header>
+    <div id="menu"></div>
+    <h1>Jogo da Decisão</h1>
+            <p>Método de leitura universal. Excelente para compreender o desenvolvimento de uma acontecimento ou
+                assunto.</p>
+        <input id="btnEscolha" class="button" type="button" value="Escolher" onclick="escolha();">
+    </div>
+    <br>
+    <br>
+    <div id="data"></div>
+    <div id="pergunta"></div>
+    <div id="resumo"></div>
+    <script>
+        var tiragem = [{
+                posicao: 'I',
+                nome: 'Posicionamento adotado',
+                significado: 'Posicionamento adotado | Figuração do contexto.',
+                aspecto: 'geral'
+            },
+            {
+                posicao: 'II',
+                nome: 'Afirmação em curto prazo ',
+                significado: 'Caso <b>Faça</b>, situação em um curto prazo.',
+                aspecto: 'geral'
+            },
+            {
+                posicao: 'III',
+                nome: 'Afirmação em médio prazo',
+                significado: 'Caso <b>Faça</b>, situação em um médio prazo',
+                aspecto: 'geral'
+            },
+            {
+                posicao: 'IV',
+                nome: 'Afirmação em médio prazo',
+                significado: 'Caso <b>Faça</b>, situação em um longo prazo',
+                aspecto: 'geral'
+            },
+            {
+                posicao: 'V',
+                nome: 'Negação em curto prazo',
+                significado: 'Caso <b>Não Faça</b>, situação em um curto prazo</h4>',
+                aspecto: 'geral'
+            },
+            {
+                posicao: 'VI',
+                nome: 'Negação em médio prazo',
+                significado: 'Caso <b>Não Faça</b>, situação em um médio prazo</h4>',
+                aspecto: 'geral'
+            },
+            {
+                posicao: 'VII',
+                nome: 'Negação em longo prazo',
+                significado: 'Caso <b>Não Faça</b>, situação em um longo prazo</h4>',
+                aspecto: 'geral'
+            },
+            {
+                posicao: 'VIII',
+                nome: 'Ambiente',
+                significado: 'Como fontes externas influenciam a situação',
+                aspecto: 'geral'
+            },
+            {
+                posicao: 'IX',
+                nome: 'Esperanças e temores',
+                significado: 'Quais são os fatos que nos trazem receio ou conforto na situação',
+                aspecto: 'geral'
+            },
+            {
+                posicao: 'X',
+                nome: 'Resultado',
+                significado: 'O futuro a longo prazo, o desfecho da situação',
+                aspecto: 'geral'
+            },
+        ];
+    </script>
+<script src="js/scripts.js"></script>
+    <script src="js/leituras.js"></script>
+    <script src="js/arcanos.js"></script>
+</body>
+
+</html>

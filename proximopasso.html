@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="js/jquery.min.js"></script>
+    <title>Próximo Passo</title>
+</head>
+
+<body>
+  <header>
+
+    </header>
+    <div id="menu"></div>
+    <h1>Próximo Passo</h1>
+    <p>Este método apresenta uma solução a curto prazo para uma situação, o que deve ser feito em seguida. É Semelhante ao método da cruz, mas voltado para interpretações mais objetivas</p>
+        <input id="btnEscolha" class="button" type="button" value="Escolher" onclick="escolha();">
+    </div>
+    <br>
+    <br>
+    <div id="data"></div>
+    <div id="pergunta"></div>
+    <div id="resumo"></div>
+    <script>
+        var tiragem = [{
+                posicao: 'I',
+                nome: 'Assunto em questão',
+                significado: 'A influência principal da questão, as energias que mais influenciam o entorno da questão',
+                aspecto: 'geral'
+            },
+            {
+                posicao: 'II',
+                nome: 'Postura obscura',
+                significado: 'Como <b>não</b> agir frente a situação',
+                aspecto: 'advertencia'
+            },   
+            {
+                posicao: 'III',
+                nome: 'Postura edificante',
+                significado: 'Como agir frente a situação',
+                aspecto: 'conselho'
+            },   
+            {
+                posicao: 'IV',
+                nome: 'Propósito da situação',
+                significado: 'Qual o maior ganho com o desenvolvimento da questão',
+                aspecto: 'geral'
+            },               
+        ];
+    </script>
+<script src="js/scripts.js"></script>
+    <script src="js/leituras.js"></script>
+    <script src="js/arcanos.js"></script>
+</body>
+
+</html>

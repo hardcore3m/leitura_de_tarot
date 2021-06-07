@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery.min.js"></script>
+    <title>Leitura de tarot</title>
+</head>
+
+<body>
+    <header>
+
+    </header>
+
+    <div class="apresentacao">
+        <h1>Teoria do tarô</h1>
+        <h2>Aspectos simbólicos e arquetípicos presentes no tarô</h2>
+        <div id="navMain" class="flexbox">
+            <div id="mainMaior" class="cards mainMaior" style="background-image: url(img/cardMa.png);">
+                <div class="cardsTop"></div>
+                <div class="cardsBottom">Arcanos maiores</div>
+            </div>
+            <div id="mainMenor" class="cards mainMenor" style="background-image: url(img/cardMe.png);">
+                <div class="cardsTop"></div>
+                <div class="cardsBottom">Arcanos menores</div>
+            </div>
+            <div id="mainNum" class="cards mainNum" style="background-image: url(img/cardNu.png);">
+                <div class="cardsTop"></div>
+                <div class="cardsBottom">Números e cartas da corte</div>
+            </div>
+            <div id="mainNaipes" class="cards mainNaipes" style="background-image: url(img/cardNa.png);">
+                <div class="cardsTop"></div>
+                <div class="cardsBottom">Naipes</div>
+            </div>
+        </div>
+        <div id="navMaior" class="arcNav">
+            <div class="mainMaior voltar">Voltar</div>
+            <h2>Arcanos Maiores</h2>
+        </div>
+        <div id="navMenor" class="arcNav">
+            <div class="mainMenor voltar">Voltar</div>
+            <h2>Arcanos Menores</h2>
+            <div class="flexbox">
+                <div class="col20">
+                    <div class="fixedBox">
+
+                        <a href="#navCopas">
+                            <div class="button"> <img class="minImg" src="img/Naipe_copas.png" alt="">
+                                COPAS</div>
+                        </a>
+                        <a href="#navOuros">
+                            <div class="button"><img class="minImg" src="img/Naipe_ouros.png" alt="">OUROS</div>
+                        </a>
+                        <a href="#navEspadas">
+                            <div class="button"><img class="minImg" src="img/Naipe_espadas.png" alt=""> ESPADAS</div>
+                        </a>
+                        <a href="#navPaus">
+                            <div class="button"><img class="minImg" src="img/Naipe_paus.png" alt="">
+                                PAUS</div>
+                        </a>
+                        <a href="#">
+                            <div class="button">TOPO &#9650;</div>
+                        </a>
+                    </div>
+
+
+                </div>
+                <div class="col80">
+                    <div id="navOuros"></div>
+                    <div id="navCopas"> </div>
+                    <div id="navEspadas"></div>
+                    <div id="navPaus"></div>
+                </div>
+            </div>
+
+
+        </div>
+        <div id="navNum" class="arcNav">
+            <div class="mainNum voltar">Voltar</div>
+            <h2>Números e arcanos da corte</h2>
+
+        </div>
+        <div id="navNaipes" class="arcNav">
+            <div class="mainNaipes voltar">Voltar</div>
+            <div class="flexbox fixedBox">
+
+            </div>
+
+            <div class="flexbox">
+
+                <div class="col20">
+                    <div class="fixedBox">
+                        <a href="#nOuros"><div class="button">Ouros</div></a>
+                        <a href="#nEspadas"><div class="button">Espadas</div></a>
+                        <a href="#nCopas"><div class="button">Copas</div></a>
+                        <a href="#nPaus"><div class="button">Paus</div></a>
+                        <a href="#"><div class="button">Topo &#9650;</div></a>
+                    </div>
+                </div>
+                <div class="col80">
+                    <div class="navArcanos">
+                        <img id="nOuros" class="planosImg" src="img/NOuros.png" alt="">
+                        <h1>Plano Material</h1>
+                        <h4>Moedas, estrelas, diamantes</h4>
+                        <h5 style="color: brown;">TERRA</h5>
+                        <h6>Yin | Frio e seco - Tudo o que é tangível</h6>
+                        <p>Ouros representa a terra e está relacionado com a parte material a qual se conecta com as
+                            ações de construir, estruturar, concretizar e finalizar. Reporta a tudo o que é tangível,
+                            obtido e que seja seu realmente.
+                            O verbo trabalhado aqui é o TER. O que eu tenho/possuo.
+                        </p>
+                        <p>
+                            <ul>
+                                <li>Concretização, manifestação, realização. Apoio da vontade, resultado da ação
+                                    espiritual. Esforço, estudo, inteligência prática.</li>
+                                <li>Preservador, operativo, realista, sensível, sensual.</li>
+                                <li>Dinheiro, ganhos, lucros, frutificação, negócios em expansão</li>
+                                <li> No plano da identidade individual significa esforço, estudo,
+                                    inteligência prática, dedicação.</li>
+                                <li> Socialmente representaria a burguesia, as finanças, o comércio e os bens
+                                    patrimoniais.</li>
+                                <li>Relaciona-se ao poder econômico.</li>
+                                <li>Corresponde ao <b>valete</b>, entre as figuras do baralho.</li>
+                                <li>São os <b>gnomos</b>, entre os espíritos elementares.</li>
+
+                            </ul>
+                        </p>
+                    </div>
+                    <div class="navArcanos">
+                        <img class="planosImg" id="nEspadas" src="img/NEspadas.png" alt="">
+                        <h1>Plano Mental</h1>
+                        <h4>Gládios, lanças</h4>
+                        <h5 style="color: forestgreen;">AR</h5>
+                        <h6>Yang | Quente e úmido - Tudo o que é racionalizado</h6>
+                        <p>Espadas representa o ar e está relacionado com a parte mental a qual se conecta com a razão e
+                            o conhecimento, a maneira como descrevemos o mundo. Representa tudo o que pode ser
+                            racionalizado, pensado e direcionado para a ação: "Como eu penso ser, O que eu penso a
+                            respeito de...". O verbo trabalhado aqui é o SER.
+                        </p>
+                        <p>
+                            <ul>
+                                <li>Pensamento, inteligência, trocas e intercâmbio. Fusão, cooperação dos opostos, ação
+                                    penetrante do Verbo.</li>
+                                <li>Maturidade e equilíbrio.</li>
+                                <li> Racional, teórico, filosófico, intelectual.</li>
+                                <li> Esforço, dificuldades, energia para a renovação.</li>
+                                <li>Arma que desenha uma cruz e recorda a união fecunda dos princípios masculino e
+                                    feminino. A espada simboliza também uma ação penetrante como a do Verbo ou do Filho.
+                                </li>
+                                <li>No plano a identidade individual significa maturidade e equilíbrio.</li>
+                                <li>Socialmente representaria os militares e os guerreiros; policiais e fiscais; toda
+                                    atividade que toma das armas para manter uma ordem
+                                    ou modificá-la. Relaciona-se ao poder apoiado pela força.</li>
+                                <li>Corresponde ao <b>cavaleiro</b>, entre as figuras do baralho.</li>
+                                <li>São <b>os silfos e os gigantes</b>, entre os espíritos elementares. </li>
+                                <li></li>
+                            </ul>
+                        </p>
+                    </div>
+                    <div class="navArcanos">
+                        <img class="planosImg" id="nCopas" src="img/NCopas.png" alt="">
+                        <h1>Plano Emocional</h1>
+                        <h4>Taças, ânforas, corações</h4>
+                        <h5 style="color: royalblue;">ÁGUA</h5>
+                        <h6>Yin | Frio e úmido - Tudo o que pode ser sonhado</h6>
+                        <p>Copas representa a água e está relacionado com a parte emocional a qual se conecta com o
+                            abstrato que tem uma relação direta com os sentimentos, as nossas sensações emocionais.
+                            Rege tudo aquilo que pode ser sonhado, esperançado aspirado pela alma. O verbo trabalhado
+                            aqui é ESTAR.</p>
+                        <p>
+                            <ul>
+                                <li>Sentimentos e emoções. Receptividade feminina, ânfora divinatória. Sensibilidade,
+                                    ideais, criações artísticas. Amores, afetos, prazeres. Paixões e sentimentos
+                                    profundos. Intuitivo, místico, romântico.</li>
+                                <li>A Mãe. Artistas, religiosos, intelectuais e poderes adquiridos por meio da cultura.
+                                </li>
+                                <li>No plano da identidade individual significa a sensibilidade, o amor, os ideais, a
+                                    criação artística.</li>
+                                <li>Corresponde à <b>dama</b>, entre as figuras do baralho.</li>
+                                <li>São <b>as ondinas e as sereias</b>, entre os espíritos elementares. </li>
+                            </ul>
+                        </p>
+                    </div>
+                    <div class="navArcanos">
+                        <img class="planosImg" id="nPaus" src="img/NPaus.png" alt="">
+                        <h1>Plano Espiritual</h1>
+                        <h4>Bastões, varas, trevos</h4>
+                        <h5 style="color: red;">FOGO</h5>
+                        <h6>Yang | Quente e seco - Tudo o que pode ser compreendido</h6>
+                        <p>Paus representa fogo e está relacionado com a parte espiritual a qual se conecta com aspectos
+                            ligados a filosofia, transformação, atitude e religiosidade. Refere-se a tudo que pode ser
+                            compreendido, aceito e evoluído pela transcendência. O verbo aqui é o FICAR.</p>
+                        <p>
+                            <ul>
+                                <li>Vontade, inspiração, criação, força, ânimo. Iniciativa, progresso, empreendimento.
+                                    Desenvolvimento, animação, invenção. Energia. Vivências, acontecimentos.</li>
+                                <li>Vara mágica, bastão do comando, cetro da dominação viril.</li>
+                                <li>Pai, poder gerador do masculino. Idealista, moralista.</li>
+                                <li>No plano da identidade individual significa força.</li>
+                                <li>Socialmente representaria os políticos, produtores e agricultores; operários,
+                                    empregados e camponeses. Relaciona-se ao governo civil.</li>
+                                <li>Corresponde ao <b>rei</b>, entre as figuras do baralho.</li>
+                                <li>São <b>as salamandras</b>, entre os espíritos elementares.
+                                </li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <style>
+
+    </style>
+    <script>
+        // ######################################################################################## Esconde Divs Secundárias
+        $(document).ready(
+            function () {
+                $(".arcNav").toggle();
+
+            }
+
+        );
+        // ######################################################################################## Menu de Maiores
+        $(".mainMaior").click(
+            function () {
+                $("#navMain").fadeToggle("slow", "linear");
+                $("#navMaior").fadeToggle("slow", "linear");
+                $("#navMaior").append('<div id="gridMaior"></div>')
+                for (let i = 0; i <= 21; i++) {
+
+                    $("#gridMaior").append(
+                        '<div class="navArcanos" id="arcano' + [i] + '">' +
+                        '<details> <summary>' +
+                        '<div style="display:flex;">' +
+                        '<div style="Width:10%">' +
+                        arcano[i].img +
+                        '</div>' +
+                        '<div style="width:30% "> <h1>' + arcano[i].numero + ' - ' + arcano[i].nome + '</h1>' +
+                        '<h2>' + arcano[i].verbo + '</h2>' +
+                        '</div>' +
+                        '<div style="background:rgba(105,27,174,0.2); margin-top:10px; width:60%">' +
+                        '<p>' + arcano[i].chaves + '<p>' +
+                        '</div>' +
+                        '</div>' +
+                        '<div style="text-align:center; padding-top:10px"><span style="opacity:0.5; font-weight:bolder"><i>Mais informações &#9660;</i></span>' +
+                        '</summary>' +
+                        '<br>' +
+                        '<h3> Referências</h3>' +
+                        '<P>' +
+                        '<b>Letra Hebraica: </b>' + arcano[i].hebraico + '<br>' +
+                        '<b>Na astrologia: </b>' + arcano[i].astrologia + '<br>' +
+                        '<b>Filosofia: </b>' + arcano[i].aspectos + '<br>' +
+                        '<p>' +
+                        '<h3> Aspectos gerais</h3>' +
+                        '<P>' +
+                        arcano[i].geral +
+                        '</p>' +
+                        '<h3> No plano material</h3>' +
+                        '<P>' +
+                        arcano[i].material +
+                        '</p>' +
+                        '<h3> No plano mental</h3>' +
+                        '<P>' +
+                        arcano[i].mental +
+                        '</p>' +
+                        '<h3> No plano espiritual</h3>' +
+                        '<P>' +
+                        arcano[i].espiritual +
+                        '</p>' +
+                        '<h3> Em posição de conselho</h3>' +
+                        '<P>' +
+                        arcano[i].conselho +
+                        '</p>' +
+                        '<h3> Como carta de advertência</h3>' +
+                        '<P>' +
+                        arcano[i].advertencia +
+                        '</p>' +
+                        '<h3> Como carta do dia</h3>' +
+                        '<P>' +
+                        arcano[i].cartaDoDia +
+                        '</p>' +
+                        '</details>' +
+                        '</div>'
+                    )
+                }
+            }
+        );
+        // ######################################################################################## Menu de menores
+        $(".mainMenor").click(
+            function () {
+                $("#navMain").fadeToggle("slow", "linear");
+                $("#navMenor").fadeToggle("slow", "linear");
+                for (let i = 22; i <= 35; i++) {
+
+                    $("#navCopas").append(
+                        '<div class="navArcanos" id="arcanom' + [i] + '">' +
+                        '<details> <summary>' +
+                        '<div style="display:flex;">' +
+                        '<div style="Width:10%">' +
+                        arcano[i].img +
+                        '</div>' +
+                        '<div style="width:30% "> <h1>' + arcano[i].nome + '</h1>' +
+                        '<h2>' + arcano[i].verbo + '</h2>' +
+                        '</div>' +
+                        '<div style="background:rgba(105,27,174,0.2); margin-top:10px; width:60%">' +
+                        '<p>' + arcano[i].chaves + '<p>' +
+                        '</div>' +
+                        '</div>' +
+                        '<div style="text-align:center; padding-top:10px"><span style="opacity:0.5; font-weight:bolder"><i>Mais informações &#9660;</i></span>' +
+                        '</summary>' +
+                        '<br>' +
+                        '<h3> Referências</h3>' +
+                        '<P>' +
+                        '<b>Letra Hebraica: </b>' + arcano[i].hebraico + '<br>' +
+                        '<b>Na astrologia: </b>' + arcano[i].astrologia + '<br>' +
+                        '<b>Filosofia: </b>' + arcano[i].aspectos + '<br>' +
+                        '<p>' +
+                        '<h3> Aspectos gerais</h3>' +
+                        '<P>' +
+                        arcano[i].geral +
+                        '</p>' +
+                        '<h3> No plano material</h3>' +
+                        '<P>' +
+                        arcano[i].material +
+                        '</p>' +
+                        '<h3> No plano mental</h3>' +
+                        '<P>' +
+                        arcano[i].mental +
+                        '</p>' +
+                        '<h3> No plano espiritual</h3>' +
+                        '<P>' +
+                        arcano[i].espiritual +
+                        '</p>' +
+                        '<h3> Em posição de conselho</h3>' +
+                        '<P>' +
+                        arcano[i].conselho +
+                        '</p>' +
+                        '<h3> Como carta de advertência</h3>' +
+                        '<P>' +
+                        arcano[i].advertencia +
+                        '</p>' +
+                        '<h3> Como carta do dia</h3>' +
+                        '<P>' +
+                        arcano[i].cartaDoDia +
+                        '</p>' +
+                        '</details>' +
+                        '</div>'
+                    )
+                }
+                for (let i = 36; i <= 49; i++) {
+
+                    $("#navOuros").append(
+                        '<div class="navArcanos" id="arcanom' + [i] + '">' +
+                        '<details> <summary>' +
+                        '<div style="display:flex;">' +
+                        '<div style="Width:10%">' +
+                        arcano[i].img +
+                        '</div>' +
+                        '<div style="width:30% "> <h1>' + arcano[i].nome + '</h1>' +
+                        '<h2>' + arcano[i].verbo + '</h2>' +
+                        '</div>' +
+                        '<div style="background:rgba(105,27,174,0.2); margin-top:10px; width:60%">' +
+                        '<p>' + arcano[i].chaves + '<p>' +
+                        '</div>' +
+                        '</div>' +
+                        '<div style="text-align:center; padding-top:10px"><span style="opacity:0.5; font-weight:bolder"><i>Mais informações &#9660;</i></span>' +
+                        '</summary>' +
+                        '<br>' +
+                        '<h3> Referências</h3>' +
+                        '<P>' +
+                        '<b>Letra Hebraica: </b>' + arcano[i].hebraico + '<br>' +
+                        '<b>Na astrologia: </b>' + arcano[i].astrologia + '<br>' +
+                        '<b>Filosofia: </b>' + arcano[i].aspectos + '<br>' +
+                        '<p>' +
+                        '<h3> Aspectos gerais</h3>' +
+                        '<P>' +
+                        arcano[i].geral +
+                        '</p>' +
+                        '<h3> No plano material</h3>' +
+                        '<P>' +
+                        arcano[i].material +
+                        '</p>' +
+                        '<h3> No plano mental</h3>' +
+                        '<P>' +
+                        arcano[i].mental +
+                        '</p>' +
+                        '<h3> No plano espiritual</h3>' +
+                        '<P>' +
+                        arcano[i].espiritual +
+                        '</p>' +
+                        '<h3> Em posição de conselho</h3>' +
+                        '<P>' +
+                        arcano[i].conselho +
+                        '</p>' +
+                        '<h3> Como carta de advertência</h3>' +
+                        '<P>' +
+                        arcano[i].advertencia +
+                        '</p>' +
+                        '<h3> Como carta do dia</h3>' +
+                        '<P>' +
+                        arcano[i].cartaDoDia +
+                        '</p>' +
+                        '</details>' +
+                        '</div>'
+                    )
+                }
+                for (let i = 50; i <= 63; i++) {
+
+                    $("#navEspadas").append(
+                        '<div class="navArcanos" id="arcanom' + [i] + '">' +
+                        '<details> <summary>' +
+                        '<div style="display:flex;">' +
+                        '<div style="Width:10%">' +
+                        arcano[i].img +
+                        '</div>' +
+                        '<div style="width:30% "> <h1>' + arcano[i].nome + '</h1>' +
+                        '<h2>' + arcano[i].verbo + '</h2>' +
+                        '</div>' +
+                        '<div style="background:rgba(105,27,174,0.2); margin-top:10px; width:60%">' +
+                        '<p>' + arcano[i].chaves + '<p>' +
+                        '</div>' +
+                        '</div>' +
+                        '<div style="text-align:center; padding-top:10px"><span style="opacity:0.5; font-weight:bolder"><i>Mais informações &#9660;</i></span>' +
+                        '</summary>' +
+                        '<br>' +
+                        '<h3> Referências</h3>' +
+                        '<P>' +
+                        '<b>Letra Hebraica: </b>' + arcano[i].hebraico + '<br>' +
+                        '<b>Na astrologia: </b>' + arcano[i].astrologia + '<br>' +
+                        '<b>Filosofia: </b>' + arcano[i].aspectos + '<br>' +
+                        '<p>' +
+                        '<h3> Aspectos gerais</h3>' +
+                        '<P>' +
+                        arcano[i].geral +
+                        '</p>' +
+                        '<h3> No plano material</h3>' +
+                        '<P>' +
+                        arcano[i].material +
+                        '</p>' +
+                        '<h3> No plano mental</h3>' +
+                        '<P>' +
+                        arcano[i].mental +
+                        '</p>' +
+                        '<h3> No plano espiritual</h3>' +
+                        '<P>' +
+                        arcano[i].espiritual +
+                        '</p>' +
+                        '<h3> Em posição de conselho</h3>' +
+                        '<P>' +
+                        arcano[i].conselho +
+                        '</p>' +
+                        '<h3> Como carta de advertência</h3>' +
+                        '<P>' +
+                        arcano[i].advertencia +
+                        '</p>' +
+                        '<h3> Como carta do dia</h3>' +
+                        '<P>' +
+                        arcano[i].cartaDoDia +
+                        '</p>' +
+                        '</details>' +
+                        '</div>'
+                    )
+                }
+                for (let i = 64; i <= 77; i++) {
+
+                    $("#navPaus").append(
+                        '<div class="navArcanos" id="arcanom' + [i] + '">' +
+                        '<details> <summary>' +
+                        '<div style="display:flex;">' +
+                        '<div style="Width:10%">' +
+                        arcano[i].img +
+                        '</div>' +
+                        '<div style="width:30% "> <h1>' + arcano[i].nome + '</h1>' +
+                        '<h2>' + arcano[i].verbo + '</h2>' +
+                        '</div>' +
+                        '<div style="background:rgba(105,27,174,0.2); margin-top:10px; width:60%">' +
+                        '<p>' + arcano[i].chaves + '<p>' +
+                        '</div>' +
+                        '</div>' +
+                        '<div style="text-align:center; padding-top:10px"><span style="opacity:0.5; font-weight:bolder"><i>Mais informações &#9660;</i></span>' +
+                        '</summary>' +
+                        '<br>' +
+                        '<h3> Referências</h3>' +
+                        '<P>' +
+                        '<b>Letra Hebraica: </b>' + arcano[i].hebraico + '<br>' +
+                        '<b>Na astrologia: </b>' + arcano[i].astrologia + '<br>' +
+                        '<b>Filosofia: </b>' + arcano[i].aspectos + '<br>' +
+                        '<p>' +
+                        '<h3> Aspectos gerais</h3>' +
+                        '<P>' +
+                        arcano[i].geral +
+                        '</p>' +
+                        '<h3> No plano material</h3>' +
+                        '<P>' +
+                        arcano[i].material +
+                        '</p>' +
+                        '<h3> No plano mental</h3>' +
+                        '<P>' +
+                        arcano[i].mental +
+                        '</p>' +
+                        '<h3> No plano espiritual</h3>' +
+                        '<P>' +
+                        arcano[i].espiritual +
+                        '</p>' +
+                        '<h3> Em posição de conselho</h3>' +
+                        '<P>' +
+                        arcano[i].conselho +
+                        '</p>' +
+                        '<h3> Como carta de advertência</h3>' +
+                        '<P>' +
+                        arcano[i].advertencia +
+                        '</p>' +
+                        '<h3> Como carta do dia</h3>' +
+                        '<P>' +
+                        arcano[i].cartaDoDia +
+                        '</p>' +
+                        '</details>' +
+                        '</div>'
+                    )
+                }
+            }
+        );
+        // ######################################################################################## Menu de Números
+        $(".mainNum").click(
+            function () {
+                $("#navMain").fadeToggle("slow", "linear");
+                $("#navNum").fadeToggle("slow", "linear");
+
+                for (let i = 0; i <= 13; i++) {
+
+                    $("#navNum").append(
+                        '<div class="navArcanos" id="navNum' + [i] + '">' +
+                        '<details> <summary>' +
+                        '<div style="display:flex;">' +
+                        '<div style="width:30% "> <h1>' + valores[i].nome + '</h1>' +
+                        '</div>' +
+                        '<div style="background:rgba(105,27,174,0.2); margin-top:10px; width:60%">' +
+                        '<p>' + valores[i].abrangencia + '<p>' +
+                        '</div>' +
+                        '</div>' +
+                        '<div style="text-align:center; padding-top:10px"><span style="opacity:0.5; font-weight:bolder"><i>mais informações &#9660;</i></span>' +
+                        '</div>' +
+                        '</summary>' +
+                        '<br>' +
+                        "<p>" +
+                        '<b>Conceito: </b>' + valores[i].conceito + '<br>' +
+                        '<b>Na numerologia: </b>' + valores[i].numerologia + '<br>' +
+                        '<b>Aspectos: </b>' + valores[i].aspecto + '<br>' +
+                        '<br>' +
+                        '<b>Relação com arcanos menores: </b>' + valores[i].menores + '<br>' +
+                        '<i><b>Com Ouros: </b>' + valores[i].ouros + '</i><br>' +
+                        '<i><b>Com Paus: </b>' + valores[i].paus + '</i><br>' +
+                        '<i><b>Com Espadas: </b>' + valores[i].espadas + '</i><br>' +
+                        '<i><b>Com Copas: </b>' + valores[i].copas + '</i><br>' +
+                        '</p>' +
+                        '</details>' +
+                        '</div>'
+                    )
+                }
+            }
+
+        );
+        // ######################################################################################## Menu de Naipes
+        $(".mainNaipes").click(
+            function () {
+                $("#navMain").fadeToggle("slow", "linear");
+                $("#navNaipes").fadeToggle("slow", "linear");
+            }
+        );
+    </script>
+    <script src="js/arcanos.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/leituras.js"></script>
+</body>
+
+</html>

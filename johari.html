@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="js/jquery.min.js"></script>
+    <title>Ponto cego | Janela de Johari</title>
+</head>
+
+<body>
+  <header>
+
+    </header>
+    <div id="menu"></div>
+    <h1>Ponto cego | Janela de Johari</h1>
+    <p>Este método consiste em avaliar aspectos da nossa personalidade e nos indica o quão
+        divergente está a nossa percepção do nós mesmos da visão que os outros tem de nós. Ótimo para
+        autoconhecimento e possíveis dificuldades em enxergar a si mesmo.</p>
+
+    <div id="selecao">
+        <p>Escolha um Arcano entre as opções e veja as informações sobre o arcano</p>
+        <input id="btnEscolha" class="button" type="button" value="Escolher" onclick="escolha();">
+    </div>
+    <br>
+    <br>
+    <div id="data"></div>
+    <div id="pergunta"></div>
+    <div id="resumo"></div>
+    <script>
+        var tiragem = [{
+                posicao: 'Casa I',
+                nome: 'Identidade inequívoca',
+                significado: 'O que é claro sobre o nosso respeito.',
+                aspecto: 'geral'
+            },
+            {
+                posicao: 'Casa II',
+                nome: 'Ponto Cego',
+                significado: 'Comportamentos que outras pessoas percebem em nós, mas nós não os enxergamos.',
+                aspecto: 'geral'
+            },
+            {
+                posicao: 'Casa III',
+                nome: 'Sombra',
+                significado: 'Comportamentos que reconhecemos em nós, mas ocultamos dos outros.',
+                aspecto: 'geral'
+            },
+            {
+                posicao: 'Casa IV',
+                nome: 'Grande Incógnita',
+                significado: 'Aspectos ou forças inconscientes, que influenciam, mas que são despercebidas por nós e pelos outros.',
+                aspecto: 'geral'
+            },
+        ];
+    </script>
+<script src="js/scripts.js"></script>
+    <script src="js/leituras.js"></script>
+    <script src="js/arcanos.js"></script>
+</body>
+
+</html>

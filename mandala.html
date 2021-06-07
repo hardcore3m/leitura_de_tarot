@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="js/jquery.min.js"></script>
+    <title>Mandala Astrológica</title>
+</head>
+
+<body>
+  <header>
+
+    </header>
+    <div id="menu"></div>
+    <h1>Mandala Astrológica</h1>
+    <p>Método baseado no círculo de signos astrológicos para uma avaliação abrangente do estado que estamos e as
+        perspectivas futuras</p>
+
+    <div id="selecao">
+        <p>Escolha um Arcano entre as opções e veja as informações sobre o arcano</p>
+        <input id="btnEscolha" class="button" type="button" value="Escolher" onclick="escolha();">
+    </div>
+    <br>
+    <br>
+    <div id="data"></div>
+    <div id="pergunta"></div>
+    <div id="resumo"></div>
+    <script>
+        var tiragem = [{
+                posicao: 'Casa I',
+                nome: 'Foco',
+                significado: 'Regida pelo signo de Áries. Simboliza o estado de espírito do consulente, o seu direcionamento e o foco de sua iniciativa.\n' +
+                    'É importante, pois determinará como as cartas nas outras posições serão percebidas',
+                aspecto: 'geral'
+            },
+            {
+                posicao: 'Casa II',
+                nome: 'Dinheiro',
+                significado: 'Regida pelo signo de Touro. Como está a sua situação financeira? Como seu dinheiro anda circulando',
+                aspecto: 'material'
+            },
+            {
+                posicao: 'Casa III',
+                nome: 'Comunicação',
+                significado: 'Regida pelo signo de Gêmeos. Como você anda se comunicando atualmente?',
+                aspecto: 'mental'
+            },
+            {
+                posicao: 'Casa IV',
+                nome: 'Lar',
+                significado: 'Regida pelo signo de Câncer. Seu ambiente de descanso, sua moradia',
+                aspecto: 'material+sentimental'
+            },
+            {
+                posicao: 'Casa V',
+                nome: 'Lazer e afetividade',
+                significado: 'Regida pelo signo de Leão. Simboliza tudo que lhe dá prazer, tudo o que faz para se divertir. Onde você se sente tranquilidade espressando seus sentimentos',
+                aspecto: 'sentimental'
+            },
+            {
+                posicao: 'Casa VI',
+                nome: 'Rotina e trabalho',
+                significado: 'Regida pelo signo de Virgem. Como anda o dia-a-dia, a sua rotina profissional?',
+                aspecto: 'material'
+            },
+            {
+                posicao: 'Casa VII',
+                nome: 'Relacionamento',
+                significado: 'Regida pelo signo de Libra. Como anda seu relacionamento fixo ou a disposição para um novo?',
+                aspecto: 'sentimental'
+            },
+            {
+                posicao: 'Casa VIII',
+                nome: 'Inconsciente',
+                significado: 'Regida pelo signo de Escorpião. O nosso lado oculto, o que não dizemos a ninguém',
+                aspecto: 'sentimental'
+            },
+            {
+                posicao: 'Casa IX',
+                nome: 'Comunicação',
+                significado: 'Regida pelo signo de Sagitário. Todas as suas espectativas a longo prazo: Viagens, estudos, carrera, família etc.',
+                aspecto: 'mental'
+            },
+            {
+                posicao: 'Casa X',
+                nome: 'Realizações',
+                significado: 'Regida pelo signo de Capricórnio. Qual o seu poder para realizar objetivos? Qual a sua atitude frente a eles?',
+                aspecto: 'material'
+            },
+            {
+                posicao: 'Casa XI',
+                nome: 'Social',
+                significado: 'Regida pelo signo de Aquário. Sua reação frente ao ambiente, aos amigos próximos',
+                aspecto: 'mental'
+            },
+            {
+                posicao: 'Casa XII',
+                nome: 'Desafio',
+                significado: 'Regida pelo signo de Peixes.Seus aspectos a serem superados. Seu carma a curto prazo.',
+                aspecto: 'conselho'
+            },
+
+        ];
+        //Tŕitonos e perguntas
+    </script>
+<script src="js/scripts.js"></script>
+    <script src="js/leituras.js"></script>
+    <script src="js/arcanos.js"></script>
+</body>
+
+</html>
