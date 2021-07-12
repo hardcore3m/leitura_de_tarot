@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/js/leituras.js"></script>
+    <script src="/js/jquery.min.js"></script>
+</head>
+
+<body>
+    <style>
+        .as {
+            display: flex;
+        }
+
+        #analise div div {
+            border: 2px saddlebrown solid;
+        }
+
+        table,
+        th,
+        td {
+            border: none;
+            border-spacing: 0px;
+
+        }
+
+        td {
+            text-align: center;
+        }
+
+        .am {
+            background-color: rgba(233, 96, 252, 0.5);
+        }
+
+        .ap {
+            background-color: rgba(252, 96, 116, 0.5);
+        }
+
+        .ae {
+            background-color: rgba(96, 116, 252, 0.5);
+        }
+
+        .ao {
+            background-color: rgb(116, 252, 96, .6);
+        }
+
+        .ac {
+            background-color: rgba(96, 252, 233, 0.5);
+        }
+    </style>
+    <table style="width:100%" id="analise">
+
+    </table>
+
+    <script>
+        var contMaiores = 1;
+        var contCopas = 2;
+        var contEspadas = 3;
+        var contOuros = 4;
+        var contPaus = 5;
+        var tiragem = contCopas + contEspadas + contMaiores + contOuros + contPaus;
+
+        console.log(Math.floor((contMaiores * 100) / tiragem));
+
+        $("#analise").append(
+            '<tr>' +
+            '<th class="am" style="width:' + Math.floor((contMaiores * 100) / tiragem) + '%;">Maiores</th>' +
+            '<th class="ap" style="width:' + Math.floor((contPaus * 100) / tiragem) + '%;">Paus</th>' +
+            '<th class="ae" style="width:' + Math.floor((contEspadas * 100) / tiragem) + '%;">Espadas</th>' +
+            '<th class="ao" style="width:' + Math.floor((contOuros * 100) / tiragem) + '%;">Ouros</th>' +
+            '<th class="ac" style="width:' + Math.floor((contCopas * 100) / tiragem) + '%;">Copas</th>' +
+            '</tr>' +
+            '<tr>' +
+            '<td class="am" >' + contMaiores + '</td>' +
+            '<td class="ap" >' + contPaus + '</td>' +
+            '<td class="ae" >' + contEspadas + '</td>' +
+            '<td class="ao" >' + contOuros + '</td>' +
+            '<td class="ac" >' + contCopas + '</td>' +
+
+            '</tr>' +
+            '<tr>' +
+            '<td class="am" >' + Math.floor((contMaiores * 100) / tiragem) + '%</td>' +
+            '<td class="ap" >' + Math.floor((contPaus * 100) / tiragem) + '%</td>' +
+            '<td class="ae" >' + Math.floor((contEspadas * 100) / tiragem) + '%</td>' +
+            '<td class="ao" >' + Math.floor((contOuros * 100) / tiragem) + '%</td>' +
+            '<td class="ac" >' + Math.floor((contCopas * 100) / tiragem) + '%</td>' +
+            '</tr>'
+        )
+    </script>
+
+</body>
+
+</html>

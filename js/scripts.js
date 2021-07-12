@@ -200,15 +200,27 @@ function getPpf() {
     $("#resumo").after('<div id="analise"></div>')
 
     $("#analise").append(
-        "<h5>Análise da leitura</h5>" +
-        "Arcanos Maiores: " + Math.floor((contMaiores * 100) / tiragem.length) + "% " + '<meter max="' + tiragem.length + '" value="' + contMaiores + '"></meter>' + "<br>" +
-        "Arcanos de Copas: " + Math.floor((contCopas * 100) / tiragem.length) + "% " + '<meter max="' + tiragem.length + '" value="' + contCopas + '"></meter>' + "<br>" +
-        "Arcanos de Espadas: " + Math.floor((contEspadas * 100) / tiragem.length) + "% " + '<meter max="' + tiragem.length + '" value="' + contEspadas + '"></meter>' + "<br>" +
-        "Arcanos de Ouros: " + Math.floor((contOuros * 100) / tiragem.length) + "% " + '<meter max="' + tiragem.length + '" value="' + contOuros + '"></meter>' + "<br>" +
-        "Arcanos de Paus: " + Math.floor((contPaus * 100) / tiragem.length) + "% " + '<meter max="' + tiragem.length + '" value="' + contPaus + '"></meter>' + "<br>" +
-        ' <input id="btnReset" class="button" type="button" value="Nova Leitura" onclick="reset();">'
-
-    )
+        '<tr>' +
+            '<th class="am" style="width:' + Math.floor((contMaiores * 100) / tiragem.length) + '%;">Maiores</th>' +
+            '<th class="ap" style="width:' + Math.floor((contPaus * 100) / tiragem.length) + '%;">Paus</th>' +
+            '<th class="ae" style="width:' + Math.floor((contEspadas * 100) / tiragem.length) + '%;">Espadas</th>' +
+            '<th class="ao" style="width:' + Math.floor((contOuros * 100) / tiragem.length) + '%;">Ouros</th>' +
+            '<th class="ac" style="width:' + Math.floor((contCopas * 100) / tiragem.length) + '%;">Copas</th>' +
+            '</tr>' +
+            '<tr>' +
+            '<td class="am" >' + contMaiores + '</td>' +
+            '<td class="ap" >' + contPaus + '</td>' +
+            '<td class="ae" >' + contEspadas + '</td>' +
+            '<td class="ao" >' + contOuros + '</td>' +
+            '<td class="ac" >' + contCopas + '</td>' +
+            '</tr>' +
+            '<tr>' +
+            '<td class="am" >' + Math.floor((contMaiores * 100) / tiragem.length) + '%</td>' +
+            '<td class="ap" >' + Math.floor((contPaus * 100) / tiragem.length) + '%</td>' +
+            '<td class="ae" >' + Math.floor((contEspadas * 100) / tiragem.length) + '%</td>' +
+            '<td class="ao" >' + Math.floor((contOuros * 100) / tiragem.length) + '%</td>' +
+            '<td class="ac" >' + Math.floor((contCopas * 100) / tiragem.length) + '%</td>' +
+            '</tr>'    )
 
 }
 
