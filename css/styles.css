@@ -20,7 +20,7 @@
 
 /*#################################################*/
 
-@media (max-width:1000px) {
+@media (max-width:800px) {
     .plFundo {
         background-color: rgb(255, 255, 200);
     }
@@ -73,6 +73,26 @@
         display: flex;
         flex-direction: row;
     }
+    .arcNav {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+    #navTeoria div p{
+        font-size: 8pt;
+    }
+    .painel {
+        display: flex;
+        flex-direction: column;
+    }
+    .painel img {
+        width: 50px;
+    }
+    .cabecalhoNavNaipes {
+        grid-column: span 2;
+        text-align: right;
+        border-bottom: #6a1b94 2px solid;
+    }
     input {
         margin-top: 20px;
     }
@@ -115,7 +135,6 @@
     .apresentacao .button:hover {
         background-color: rgba(106, 27, 148, 0.2);
     }
-    
     #main a {
         font-weight: bold;
         color: #6a1b94;
@@ -200,7 +219,7 @@
         font-size: 16pt;
         padding: 10px;
     }
-    #topo{
+    #topo {
         display: none;
     }
     summary::marker {
@@ -244,7 +263,7 @@
 
 /*#################################################*/
 
-@media (min-width:1000px) {
+@media (min-width:800px) {
     .plFundo {
         background-color: rgb(255, 255, 200);
     }
@@ -302,6 +321,17 @@
     #menu a {
         margin: 10px;
     }
+    .arcNav {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 10px;
+    }
+    .cabecalhoNavNaipes {
+        grid-column: span 6;
+        text-align: center;
+        border-bottom: #6a1b94 2px solid;
+        border-top: #6a1b94 2px solid;
+    }
     details {
         margin: 20px 30px;
     }
@@ -323,7 +353,7 @@
         background-size: 100% 100%;
         background-repeat: no-repeat;
         background-position: center;
-        width: 1000px;
+        width: 100%;
         margin-left: auto;
         margin-right: auto;
         margin-top: 15px;
@@ -490,4 +520,81 @@
 
 #footer {
     margin-top: 100px;
+}
+
+.arcNav {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.arcNav img {
+    width: 100%;
+}
+
+.arcNav div {
+    border: #6a1b94 solid 2px;
+    border-radius: 5px;
+}
+
+#navTeoria {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #ddd;
+    font-weight: bold;
+    background-color: rgb(106, 27, 148, 0.4);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#navTeoria div {
+    width: 70%;
+}
+
+#navTeoria img {
+    width: 100%;
+}
+#escolhaUsuarioFlex img {
+    width: 100%;
+}
+
+#escolhaUsuarioFlex {
+    display: flex;
+    flex-direction: row;
+}
+
+#escolhaUsuarioFlex p {
+    border-bottom: #6a1b94 2px solid;
+    word-break: break-all;
+}
+
+#escolhaUsuarioMain div {
+    padding: 10px;
+    text-align: justify;
+}
+
+#escolhaUsuarioMain {
+    border: #6a1b94 solid 2px;
+    margin-top: 10px;
+    border-radius: 15px;
+}
+
+#escolhaUsuarioTitulo {
+    background-color: #6a1b94;
+    color: #ddd;
+    padding: 10px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-bottom: 20px;
+}
+
+#escolhaUsuarioTitulo h3 {
+    text-align: right;
+    font-style: italic;
+}
+#escolhaUsuarioText{
+    width:70%
 }
